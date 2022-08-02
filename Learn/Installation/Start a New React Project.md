@@ -17,11 +17,11 @@ React는 UI 코드를 '컴포넌트'라고 부르는 작은 조각들로 쪼개 
 만약 여러분이 React를 배운다면, 우리는 [Create React App](https://create-react-app.dev/)을 추천합니다. React를 접하거나 새로운 단일 페이지, 클라이언트 사이드 애플리케이션을 만드는데 있어 가장 유명한 방법입니다. CRA(Create React App)은 React를 위해 만들어졌지만, 라우팅이나 데이터 fetching같은 것들은 설정되어있지 않아요.
 
 먼저, Node.js를 설치합니다. 그리고 terminal(명령 프롬프트)을 열어 아래 명령어를 입력해 프로젝트를 시작합시다.
-```
+```shell
 npx create-react-app my-app
 ```
 이제 여러분은 방금 만든 애플리케이션을 아래 명령어를 통해 실행시킬 수 있습니다.
-```
+```shell
 cd my-app
 npm start
 ```
