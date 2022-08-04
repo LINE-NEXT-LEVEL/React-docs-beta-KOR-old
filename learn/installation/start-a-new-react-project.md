@@ -67,4 +67,4 @@ npm start
 * linter : 일반적으로 많이 하는 실수들로부터 코드를 지켜줍니다. [ESLint](https://eslint.org/)가 유명합니다.
 * test runner : 여러분이 작성한 코드에 대해 테스트를 돌려줍니다. [Jest](https://jestjs.io/)가 유명합니다.
 
-만약 여러분이 처음부터 여러분만의 JavaScript 툴체인을 만들고자 할 경우 [이 가이드를 참고해보세요.](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) Create React App을 ***Create React App 기능 일부를*** 다시 만드는 과정을 담고 있습니다. ***y. A framework will usually also provide a routing and a data fetching solution. 문장이 빠졌습니다.*** ***더*** 큰 프로젝트에서는 하나의 저장소(repository) 안에 여러 패키지들을 담고 ***관리하고??*** 싶을 수 있습니다. [Nx](https://nx.dev/react) 또는 [Turborepo](https://turborepo.org/)같은 도구를 쓰는것도 좋은 방법입니다.
+만약 여러분이 처음부터 여러분만의 JavaScript 툴체인을 만들고자 할 경우 [이 가이드를 참고해보세요.](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) Create React App을 ***Create React App 기능 일부를*** 다시 만드는 과정을 담고 있습니다. ***A framework will usually also provide a routing and a data fetching solution. 문장이 빠졌습니다.*** ***더*** 큰 프로젝트에서는 하나의 저장소(repository) 안에 여러 패키지들을 담고 ***관리하고??*** 싶을 수 있습니다. [Nx](https://nx.dev/react) 또는 [Turborepo](https://turborepo.org/)같은 도구를 쓰는것도 좋은 방법입니다.
