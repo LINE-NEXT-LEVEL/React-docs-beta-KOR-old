@@ -11,6 +11,11 @@ React로 만들어진 웹사이트를 디버그하는 가장 쉬운 방법은 Re
 - [**Edge**용 설치하기](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
 여러분은 이제 React를 이용해 만든 웹사이트에 방문한다면 개발자 도구에서 Components 패널과 Profiler 패널을 확인할 수 있을겁니다.
+
+❗️*한 줄 뜨워주세요.*
+
+❗️*사진 사이즈가 조금 줄어들면 보기 편할 것 같습니다.*
+
 ![react-dev-tools-1](https://beta.reactjs.org/images/docs/react-devtools-extension.png)
 
 # Safari와 그 외의 브라우저
@@ -27,12 +32,20 @@ npm install -g react-devtools
 react-devtools
 ```
 마지막으로 `<script>` 태그를 여러분의 웹사이트의 `<head>` 내부에 넣음으로써 여러분의 웹사이트와 개발자 도구를 연결할 수 있습니다.
+
+❗️*beginning>에 대한 번역을 추가하면 좋을 것 같습니다.*
+
 ```html
 <html>
     <head>
         <script src="http://localhost:8097"></script>
 ```
 여러분의 웹사이트를 새로고침 하면 브라우저의 개발자 도구에서 아래와 같은 화면을 볼 수 있습니다.
+
+❗️*한 줄 뜨워주세요.*
+
+❗️*사진 사이즈가 조금 줄어들면 보기 편할 것 같습니다.*
+
 ![react-dev-tools-2](https://beta.reactjs.org/images/docs/react-devtools-standalone.png)
 
 ## 모바일 환경(React Native)
