@@ -90,7 +90,7 @@ root.render(React.createElement(LikeButton));
 만약 같은 컴포넌트를 여기저기 렌더링시키고 싶다면 `id` 대신 CSS `class`를 각 root에 붙일 수도 있습니다. 이건 [세 개의 'LikeButton'을 만들고 각각에 데이터를 넘겨주는 예제](https://gist.github.com/gaearon/779b12e05ffd5f51ffadd50b7ded5bc8)입니다.
 
 ### 5단계 : 프로덕션을 위해 JavaScript를 경량화합니다.
-경량화 되지 않은 JavaScript를 사용하면 여러분의 웹사이트를 찾는 유저들이 기다려야 하는 로딩시간이 매우 길어질 수 있습니다. 웹사이트를 배포하기 전에 script들을 경량화하는걸 추천합니다.
+무거운 JavaScript를 사용하면 여러분의 웹사이트를 찾는 유저들이 기다려야 하는 로딩시간이 매우 길어질 수 있습니다. 웹사이트를 배포하기 전에 script들을 가볍게 만드는 걸 추천합니다.
 - 여러분이 쓰는 스크립트의 '경량화 단계'가 없는 경우, [한 가지 설정 방법](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3)을 제안합니다.
 - React는 `production.min.js`로 끝나는 스크립트 파일이 경량화된 버전의 스크립트입니다. 배포된 웹사이트가 이걸 사용하는게 맞다면 프로덕션에 내보내도 좋습니다.
 
@@ -140,7 +140,7 @@ return (
 );
 ```
 
-JS와 마크업을 함께 사용하는게 처음에는 조금 어색할 수 있습니다. 그래도 점점 적응이 될겁니다. [JSX로 마크업 작성하기](https://beta.reactjs.org/learn/writing-markup-with-jsx)도 한번 확인해보세요. 이건 [JSX로 쓰여진 HTML 파일][(](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html))입니다. 다운로드 받고 갖고 놀기 좋습니다.
+JS와 마크업을 함께 사용하는게 처음에는 조금 어색할 수 있습니다. 그래도 점점 적응이 될겁니다. [JSX로 마크업 작성하기](https://beta.reactjs.org/learn/writing-markup-with-jsx)도 한번 확인해보세요. 이건 [JSX로 쓰여진 HTML 파일](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html)입니다. 다운로드 받고 갖고 놀기 좋습니다.
 
 > **주의사항**
 > Babel 컴파일러를 `<script>`를 통해 사용하는 방법은 학습하거나 간단한 데모를 만드는 단계에서는 좋습니다. 하지만 웹사이트를 느려지게 만들기 때문에 프로덕션에는 적합하지 않습니다. 다음 단계로 나아갈 준비가 되었다면 `type="text/babel"` 속성을 지우고 `<script>` 태그로 Babel compiler를 사용하지 않도록 합시다. 대신 다음 섹션에서는 `<script>` 태그 전체를 JSX에서 JS로 바꿔줄 JSX 전처리기(preprocessor)를 추가할겁니다.
