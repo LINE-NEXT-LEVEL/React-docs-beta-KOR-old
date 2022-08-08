@@ -12,7 +12,6 @@ React로 만들어진 웹사이트를 디버그하는 가장 쉬운 방법은 Re
 
 여러분은 이제 React를 이용해 만든 웹사이트에 방문한다면 개발자 도구에서 Components 패널과 Profiler 패널을 확인할 수 있을겁니다.
 
-![react-dev-tools-1](https://beta.reactjs.org/images/docs/react-devtools-extension.png)
 <img src="https://beta.reactjs.org/images/docs/react-devtools-extension.png" width="720">
 
 # Safari와 그 외의 브라우저
