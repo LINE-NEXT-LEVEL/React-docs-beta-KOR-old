@@ -32,7 +32,7 @@ Prettier를 실행하면 모든 여러분의 탭들이 공백으로 변경되고
 3. `ext install esbenp.prettier-vscode` 입력
 4. 엔터
 ### Formatting on save
-저장하다 코드를 포매팅하는걸 추천합니다. VS Code는 관련 세팅을 갖고있습니다.
+저장할때마다 코드를 자동으로 정리해주는 기능을 이용해보세요. VS Code는 관련 세팅을 갖고있습니다.
 1. VS Code에서 `CTRL/CMD + SHIFT + P` 입력
 2. `settings` 입력
 3. 엔터
