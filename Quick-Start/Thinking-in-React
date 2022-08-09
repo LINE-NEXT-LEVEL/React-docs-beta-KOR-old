@@ -21,7 +21,7 @@ JSON API는 아래와 같은 데이터를 반환합니다.
 
 시안은 아래와 같습니다.
 
-이미지
+<img width="298" alt="image" src="https://user-images.githubusercontent.com/55529617/183777211-927853e8-a37a-4e13-9d42-ae3ee1541729.png">
 
 리엑트에서 UI를 실행시키기 위해서는 당신은 일반적으로 다섯 스텝들을 따르면 됩니다.
 
@@ -38,6 +38,8 @@ JSON API는 아래와 같은 데이터를 반환합니다.
 만약 JSON이 잘 구조화되어있다면 당신은 JSON이 당신의 UI 컴포넌트 구조와 자연스럽게 매핑된다는 것을 발견할 수 있습니다. 그 이유는 UI와 데이터 구조는 종종 같은 정보 설계(즉, 같은 형태)를 가지고 있기 때문입니다. 데이터 구조와 하나씩 매칭되는 각각의 컴포넌트는 UI에서 컴포넌트로 분리합니다.
 
 아래 화면에는 다섯개의 컴포넌트들이 있습니다.
+
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/55529617/183777241-fdf7d4f9-524a-416c-a529-7f30bebc1aa1.png">
 
 1. `FilterableProductTable` (회색)은 전체 app을 감싸고 있습니다.
 2. `SearchBar` (파란색)은 사용자 입력을 받고 있습니다.
@@ -158,7 +160,7 @@ export default function App() {
 
 ```
 
-이미지
+<img width="772" alt="image" src="https://user-images.githubusercontent.com/55529617/183777428-4525bf6a-2885-4d34-b654-fb1497fa9292.png">
 
 (만약 이 코드를 보는 게 겁난다면 [Quick Start](https://beta.reactjs.org/learn)를 먼저 보세요!)
 
@@ -377,7 +379,10 @@ export default function App() {
 }
 ```
 
-이미지
+useState('')|useState('fruit')
+------|---
+|<img width="774" alt="image" src="https://user-images.githubusercontent.com/55529617/183777661-757a4f74-a049-4c27-82bf-9c35f0e2b0ac.png">|<img width="772" alt="image" src="https://user-images.githubusercontent.com/55529617/183777725-b4899d19-bc7e-4f11-b18e-aaa1c3a5be24.png">|
+
 
 샌드박스에서 `ProductTable`과 `SearchBar`는 표, 입력, 체크박스를 렌더링하가ㅣ 위해 `filterText`와 `inStockOnly` props를 사용합니다. 예를 들어, 아래 코드는 어떻게 `SearchBar`가 입력값을 만들어내는지 보여줍니다:
 
@@ -554,7 +559,7 @@ export default function App() {
 }
 ```
 
-이미지
+<img width="769" alt="image" src="https://user-images.githubusercontent.com/55529617/183777809-c7709e2c-16c9-4362-a424-025cbdf9de21.png">
 
 이벤트 핸들링과 상태 업데이트에 대해서는 [상호작용 추가하기](https://beta.reactjs.org/learn/adding-interactivity) 부분에서 더 배울 수 있습니다.
 
