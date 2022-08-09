@@ -25,6 +25,7 @@ JavaScript를 위해 쓰이는 오픈소스인 [ESLint](https://eslint.org/)가 
 여러분의 코드를 공유할 때, [탭 vs 공백](https://www.google.com/search?q=tabs+vs+spaces)으로 다른 기여자들과 토론하는 것은 지양하고 싶으실거에요.
 다행히도, [Prettier](https://prettier.io/)는 정해진 규칙에 맞춰 여러분의 코드를 새로 포매팅하여 정리해줍니다.
 Prettier를 실행하면 모든 여러분의 탭들이 공백으로 변경되고 들여쓰기, 따옴표등이 설정에 맞춰 변경될거에요. 이상적인 세팅을 위해 Prettier는 파일을 저장할때 실행되어 빠르게 변경해줍니다.
+
 다음과 같은 과정을 통해 [VSCode의 Prettier 확장프로그램](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)을 설치할 수 있습니다
 1. VS Code 실행
 2. Quick Open(단축키 Ctrl/Cmd+p)
