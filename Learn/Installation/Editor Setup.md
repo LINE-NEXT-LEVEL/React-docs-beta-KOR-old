@@ -19,7 +19,7 @@
 ### Linting
 코드 linter 들은 여러분이 코드를 쓸때 문제를 찾아주고, 빠르게 수정할 수 있도록 해줍니다.
 JavaScript를 위해 쓰이는 오픈소스인 [ESLint](https://eslint.org/)가 유명합니다.
-- [React 추천 설정으로 ESLint 설치하기](https://www.npmjs.com/package/eslint-config-react-app)([노드 설치](https://nodejs.org/en/download/current/)를 확인하세요)
+- [React 추천 설정으로 ESLint 설치하기](https://www.npmjs.com/package/eslint-config-react-app)([Node 설치](https://nodejs.org/en/download/current/)를 확인하세요)
 - [공식 확장 프로그램으로 VSCode에 ESLint 설치하기](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 ### Formatting
 여러분의 코드를 공유할 때, 탭 vs 공백으로 다른 기여자들과 토론하는 것은 지양하고 싶으실거에요.
