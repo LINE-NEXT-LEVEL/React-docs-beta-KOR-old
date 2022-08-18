@@ -190,7 +190,7 @@ const products = [
   { title: 'Apple', id: 3 },
 ];
 ```
-`map()` 함수를 사용해서 상품 배열을 `<li>` 아이템 배열로 변환하고, component 안에 넣습니다.
+`map()` 함수를 사용해서 상품 배열을 `<li>` 아이템 배열로 변환하고, 컴포넌트 안에 넣습니다.
 ```javascript
 const listItems = products.map(product =>
   <li key={product.id}>
