@@ -180,7 +180,7 @@ return (
 위 셋 모두 조건부로 상태를 표시해줍니다. 이런 JavaScript 구문에 익숙하지 않으 항상 `if...else`를 사용하는 것으로 시작할 수 있습니다.
 
 ## List 렌더링하기 
-컴포넌트 리스트를 렌더링하기 위해서 `for` 반복문이나 [배열의 `map()`함수](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)와 같은 JavaScript 특징들을 사용하게 될 겁니다.
+컴포넌트 리스트를 렌더링하기 위해서 `for` 반복문이나 [배열의 `map()`함수](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)와 같은 JavaScript 기능들을 사용하게 될 겁니다.
 상품이 담긴 배열로 예를 들어보겠습니다.
 ```javascript
 const products = [
