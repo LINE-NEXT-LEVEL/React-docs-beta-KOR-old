@@ -23,7 +23,7 @@ function MyButton() {
   );
 }
 ```
-MyButton이라는 컴포넌트를 선언했습니다. 이 컴포넌트를 다른 컴포넌트 안에 중첩할 수 있습니다.
+`MyButton`이라는 컴포넌트를 선언했습니다. 이 컴포넌트를 다른 컴포넌트 안에 중첩할 수 있습니다.
 ```javascript
 export default function MyApp() {
   return (
