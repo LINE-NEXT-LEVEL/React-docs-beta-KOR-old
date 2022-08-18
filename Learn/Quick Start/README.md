@@ -81,7 +81,7 @@ function AboutPage() {
 JSX로 변경해야 하는 HTML이 많다면, [온라인 변환기](https://transform.tools/html-to-jsx)를 사용할 수 있습니다.
 
 ## 스타일 추가하기
-react에서는 css class를 명시하기 위해 className을 사용합니다. 동작하는 방식은 HTML의 class 속성과 같습니다.
+react에서는 `css class`를 명시하기 위해 className을 사용합니다. 동작하는 방식은 HTML의 `class` 속성과 같습니다.
 ```javascript
 <img className="avatar" />
 ```
