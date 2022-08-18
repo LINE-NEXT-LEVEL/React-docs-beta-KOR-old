@@ -230,7 +230,7 @@ export default function ShoppingList() {
 ```
 
 ## 이벤트에 반응하기
-component안에 _이벤트 핸들러_ 함수를 선언해서 이벤트에 반응하게 할 수 있습니다.
+컴포넌트 안에 _이벤트 핸들러_ 함수를 선언해서 이벤트에 반응하게 할 수 있습니다.
 ```javascript
 function MyButton() {
   function handleClick() {
