@@ -34,6 +34,7 @@ export default function Gallery() {
   );
 }
 ```
+![image](https://user-images.githubusercontent.com/15559593/185513368-e60a55c7-9835-4648-8eb7-c086c9399bec.png)
 
 이는 루트 component파일인 App.js에 있습니다. 이 예제의 [Create React App](https://create-react-app.dev/)에서 여러분의 app은 `src/App.js`에 있습니다. 여러분의 설정에 따라 루트 component파일은 다른 파일이 될 수도 있습니다. Next.js와 같은 file-based 라우팅을 기반으로한 프레임워크를 사용하신다면, 여러분의 루트 component는 각 페이지별로 달라질거에요.
 
@@ -83,6 +84,9 @@ export default function Gallery() {
   );
 }
 ```
+![image](https://user-images.githubusercontent.com/15559593/185513425-1ddfddd2-90d4-4712-a372-378870d1f199.png)
+
+
 이 예제가 어떻게 두 component 파일로 분리되었는지 살펴봅시다.
 1. `Gallery.js`:
    - 같은 파일 내에서만 활용되고 export 되지 않았던 `Profile` component 정의합니다.
@@ -102,6 +106,8 @@ export default function Gallery() {
 > Default vs Named Exports
 > Javascript로 export하는 두가지 방법이 있습니다.
 > default와 named export이죠. 지금까지 우리의 예시들은 default export만 써왔습니다. 하지만 여러분은 두가지 방법을 같은 파일에서 쓸 수 있습니다. default export는 하나만 가질 수 있지만, named export는 여러개 가질 수 있습니다.
+![image](https://user-images.githubusercontent.com/15559593/185513474-9afb38c9-99e0-48d3-b349-1a6b702d99e5.png)
+
 > 여러분의 component를 export하는 방식은 import를 어떻게 하냐에 따라 달라집니다. named export를 import하듯이 default export를 import하려 시도하면 에러가 발생할 것 입니다. 아래 차트가 형식을 맞추는 데 도움이 될 것입니다.
 >
 |문법|export 구문|import 구문|
@@ -183,9 +189,9 @@ export default function Gallery() {
 }
 
 ```
+![image](https://user-images.githubusercontent.com/15559593/185513571-8b8e5ea4-0416-4b93-8837-1003fa4367e5.png)
 
 이제 여러분은 default와 named export를 함께 쓰고있습니다.
-
 
 - `Gallery.js`:
   - `Profile`이름으로 `Profile` component를 named export 합니다.
@@ -256,7 +262,8 @@ export default function Gallery() {
 ```
 ```js
 //Profile.js
-
 ```
+![image](https://user-images.githubusercontent.com/15559593/185513583-a09e38e8-897b-4e45-a3ab-15ce8163be37.png)
+
 
 한 방식의 export 동작을 확인하고 다른방식도 동작을 확인해보세요.
