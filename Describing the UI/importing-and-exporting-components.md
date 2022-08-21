@@ -119,7 +119,7 @@ export default function Gallery() {
 이것이 named import라고 불리는 이유입니다.
 > 사람들은 주로 file이 하나의 컴포넌트만 export할때  default export를 사용하고, 여러 컴포넌트와 value들을 export할 때 named export를 사용합니다. 여러분이 어떤 코딩스타일을 선호하여도, 여러분의 컴포넌트 함수들과, 이를 담고있는 파일들에 의미있는 네이밍을 해야합니다. `export default () => {}`와 같은 이름없는 컴포넌트들은 디버깅을 더 어렵게 만들기 때문에 지양해야합니다.
 
-## 한 파일에서 여러 컴포넌트를 Importing(가져오기)와 Exporting(내보내기)하는 법
+## 한 파일에서 여러 컴포넌트를 Importing(가져오기)과 Exporting(내보내기)하는 법
 
 `gallery`대신 `Profile`을 보여주고 싶다면 어떻게하면될까요? `Profile` 컴포넌트도 export할 수 있죠. 하지만 `Gallery.js`는 이미 default export하고 있기때문에 두 default export를 할 수는 없습니다.
 default export를 하는 새로운 파일을 만들거나, `Profile`에 named export를 추가할 수 있습니다. 하나의 파일은 오직 하나의 default export를 가질 수 있지만, named export는 여러개 가질 수 있습니다.
