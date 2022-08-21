@@ -11,11 +11,11 @@
 
 ## 여러분의 모험을 선택하세요
 
-React는 UI 코드를 '컴포넌트'라고 부르는 작은 조각들로 쪼개 정리할 수 있도록 합니다. React는 라우팅이나 데이터 관리같은 일은 관여하지 않아요. 그렇기 때문에 여러분이 새 React 프로젝트를 시작할 때 여러 선택지가 존재할 수 있습니다.
+React는 UI 코드를 '컴포넌트'라고 부르는 작은 조각들로 쪼개 정리할 수 있도록 도와주는 라이브러리입니다. React는 라우팅이나 데이터 관리같은 일은 관여하지 않습니다. 그렇기 때문에 여러분이 새 React 프로젝트를 시작할 때 여러 선택지가 존재할 수 있습니다.
 
 * [HTML 파일과 script 태그로 시작하는 방법](https://beta.reactjs.org/learn/add-react-to-a-website)은 Node.js 설정은 필요 없지만 몇몇 기능이 제한적입니다.
-* 최소한의 툴체인으로 시작해 프로젝트를 진행함에 따라 여러 기능들을 추가할 수 있습니다. (배우기에도 좋구요!)
-* 프레임워크는 조금 더 완고합니다. 데이터 fetching이나 라우팅 같은 기능들은 여러분이 직접 설정하지 않아도 프레임워크가 제공해줍니다.
+* 최소한의 툴체인으로 시작하는 방법은 프로젝트를 진행함에 따라 여러 기능들을 추가할 수 있습니다. (배우기에도 좋구요!)
+* 프레임워크는 사용하는 방법은, 데이터를 가져오는 방법과 라우팅 같은 기능들은 여러분이 직접 설정하지 않아도 프레임워크가 제공해줍니다.
 
 ## 작은 툴체인으로 시작하기
 
@@ -45,7 +45,7 @@ npm start
 
 ## 완전한 프레임워크로 시작하기
 
-만약 여러분이 프로덕션을 위한 프로젝트를 시작하려 한다면, [Next.js](https://nextjs.org/)가 훌륭한 선택입니다. Next.js는 정적이고 server-rendered 애플리케이션을 만들기 위한 유명하고 가벼운 프레임워크입니다. 라우팅이나 스타일링, 서버사이드 렌더링같은 기능들도 내장되어 있습니다. Next.js를 이용하면 프로젝트를 빠르게 시작하고 실행할 수 있습니다.
+만약 여러분이 프로덕션을 위한 프로젝트를 시작하려 한다면, [Next.js](https://nextjs.org/)는 훌륭한 선택입니다. Next.js는 정적이고 server-rendered 애플리케이션을 만들기 위한 인기있고 가벼운 프레임워크입니다. 라우팅이나 스타일링, 서버사이드 렌더링같은 기능들도 내장되어 있습니다. Next.js를 이용하면 프로젝트를 빠르게 시작하고 실행할 수 있습니다.
 
 [Next.js 재단](https://nextjs.org/learn/foundations/about-nextjs)은 React와 Next.js에 대한 훌륭한 튜토리얼을 제공하고 있습니다.
 
@@ -67,4 +67,4 @@ npm start
 * linter : 일반적으로 많이 하는 실수들로부터 코드를 지켜줍니다. [ESLint](https://eslint.org/)가 유명합니다.
 * test runner : 여러분이 작성한 코드에 대해 테스트를 돌려줍니다. [Jest](https://jestjs.io/)가 유명합니다.
 
-만약 여러분이 처음부터 여러분만의 JavaScript 툴체인을 만들고자 할 경우 [이 가이드를 참고해보세요.](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) Create React App을 다시 만드는 과정을 담고 있습니다. 큰 프로젝트에서는 하나의 저장소(repository) 안에 여러 패키지들을 담고 싶을 수 있습니다. [Nx](https://nx.dev/react) 또는 [Turborepo](https://turborepo.org/)같은 도구를 쓰는것도 좋은 방법입니다.
+만약 여러분이 처음부터 여러분만의 JavaScript 툴체인을 만들고자 할 경우 [이 가이드를 참고해보세요.](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) Create React App을 Create React App 기능 일부를 다시 만드는 과정을 담고 있습니다. 프레임워크는 대체로 라우팅과 데이터를 가져오는 방법을 제공합니다. 더 큰 프로젝트에서는 하나의 저장소(repository) 안에 여러 패키지들을 담고 관리하고 싶을 수 있습니다. [Nx](https://nx.dev/react) 또는 [Turborepo](https://turborepo.org/)같은 도구를 쓰는것도 좋은 방법입니다.
