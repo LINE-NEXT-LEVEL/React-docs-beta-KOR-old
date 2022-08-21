@@ -121,19 +121,19 @@ export default function Gallery() {
 
 ## 한 파일에서 여러 컴포넌트를 Importing(가져오기)과 Exporting(내보내기)하는 법
 
-`gallery`대신 `Profile`을 보여주고 싶다면 어떻게하면될까요? `Profile` 컴포넌트도 export할 수 있죠. 하지만 `Gallery.js`는 이미 default export하고 있기때문에 두 default export를 할 수는 없습니다.
+`gallery` 대신 `Profile`을 보여주고 싶다면 어떻게 하면 될까요? `Profile` 컴포넌트도 export할 수 있습니다. 하지만 `Gallery.js`는 이미 default export하고 있기 때문에 두 번의 default export를 할 수는 없습니다.
 default export를 하는 새로운 파일을 만들거나, `Profile`에 named export를 추가할 수 있습니다. 하나의 파일은 오직 하나의 default export를 가질 수 있지만, named export는 여러개 가질 수 있습니다.
 
-> default과 named export의 헷갈림을 줄이기 위해서, 어떤 팀은 하나의 스타일을 고수하거나 하나의 파일에서 혼용되는 것을 피합니다. 선호의 차이일 뿐이에요. 당신에게 맞는 방법으로 하시면 됩니다.
+> default와 named export의 헷갈림을 줄이기 위해서, 어떤 팀은 하나의 스타일을 고수하거나 하나의 파일에서 혼용되는 것을 피합니다. 선호의 차이일 뿐이에요. 여러분에게 맞는 방법으로 하시면 됩니다.
 
-먼저, `Profile`과 `Gallery.js`를 export합니다(`default` 없이 합니다)
+먼저, `Profile`과 `Gallery.js`를 named export합니다(`default` 없이 합니다)
 
 ```js
 export function Profile() {
   // ...
 }
 ```
-다음, `Gallery.js`에서 `Profile`를 named import로 import합니다(중괄호 활용)
+다음, `Gallery.js`에서 `App.js`로 `Profile`을 named import로 import합니다(중괄호 활용)
 
 ```js
 import { Profile } from './Gallery.js';
@@ -207,7 +207,7 @@ export default function Gallery() {
 - 루트 컴포넌트 파일이 무엇인지
 - 컴포넌트를 import, export하는 방법
 - import, export 시 default vs named 구분하기
-- 하나의 파일에서 여러 컴포넌트를 import & export 하는 방법
+- 하나의 파일에서 여러 컴포넌트를 export 하는 방법
 
 
 > ## 도전 과제
@@ -220,8 +220,8 @@ export default function Gallery() {
 
 |문법|export 구문|import 구문|
 |------|---|---|
-|Default| export default function Button(){}|import Button from './button.js;|
-|Named|export function Button(){}|import { Button } from './button.js';
+|Default|` export default function Button(){}`|`import Button from './button.js;`|
+|Named|`export function Button(){}`|`import { Button } from './button.js';`
 
 [CodeSandbox](https://codesandbox.io/s/wre7jj?file=%2FGallery.js&from-sandpack=true)
 ```js
