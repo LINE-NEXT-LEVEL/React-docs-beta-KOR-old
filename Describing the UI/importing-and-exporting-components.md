@@ -46,8 +46,8 @@ export default function Gallery() {
 다음 세가지 단계를 따라 컴포넌트를 옮길 수 있습니다.
 
 1. 컴포넌트들을 넣을 새로운 JS파일을 만든다.
-2. 그 파일에서 함수형 컴포넌트를 export([default](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/export#using_the_default_export)나. [named](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/export#using_named_exports)방식을 쓰세요)
-3. 그 컴포넌트를 사용할 파일에 import시키세요([default](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/import#importing_defaults)나. [named](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/import#import_a_single_export_from_a_module)방식을 쓰세요)
+2. 그 파일에서 함수형 컴포넌트를 `export`한다([default](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/export#using_the_default_export)나. [named](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/export#using_named_exports)방식을 쓰세요)
+3. 그 컴포넌트를 사용할 파일에 `import`시키세요([default](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/import#importing_defaults)나. [named](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/import#import_a_single_export_from_a_module)방식을 쓰세요)
 
 여기 `Profile`과 `Gallery`가 App.js로부터 분리되어 `Gallery.js`라는 새로운 파일에 옮겨졌습니다. 이제 여러분은 `Gallery.js`에서 `Gallery`를 App.js에 import할 수 있습니다.
 
@@ -111,14 +111,13 @@ export default function Gallery() {
 
 > 여러분의 컴포넌트를 export하는 방식은 import를 어떻게 하냐에 따라 달라집니다. named export를 import하듯이 default export를 import하려 시도하면 에러가 발생할 것 입니다. 아래 차트가 형식을 맞추는 데 도움이 될 것입니다.
 >
-|문법|export 구문|import 구문|
+|문법|export 문|import 문|
 |------|---|---|
-|Default| export default function Button(){}|import Button from './button.js;|
-|Named|export function Button(){}|import { Button } from './button.js';
-
-> default import를 사용할때는, `import`다음에 아무 네이밍을 사용해도 괜찮습니다. 예를들어 `import Banana from './button.js`라고 작성할 수 있고, 같은 default export 결과를 보게 되실 겁니다. 반대로 named import에서는 네이밍은 양쪽이 서로 맞아야합니다.
+|Default| `export default function Button(){}`|`import Button from './button.js;`|
+|Named|`export function Button(){}`|`import { Button } from './button.js'`;
+> _Default_ import를 사용할때는, `import`다음에 아무 네이밍을 사용해도 괜찮습니다. 예를들어 `import Banana from './button.js`라고 작성할 수 있고, 같은 default export 결과를 보게 되실 겁니다. 반대로 _named_ import에서는 양쪽에 같은 이름을 붙여줘야 합니다.
 이것이 named import라고 불리는 이유입니다.
-> 사람들은 주로 file이 하나의 컴포넌트만 export할때  default export를 사용하고, 여러 컴포넌트와 value들을 export할 때 named export를 사용합니다. 여러분이 어떤 코딩스타일을 선호하여도, 여러분의 컴포넌트 함수들과, 이를 담고있는 파일들에 의미있는 네이밍을 해야합니다. `export default () => {}`와 같은 이름없는 컴포넌트들은 디버깅을 더 어렵게 만들기 때문에 지양해야합니다.
+> **사람들은 주로 파일이 하나의 컴포넌트만 export할때  default export를 사용하고, 여러 컴포넌트와 value들을 export할 때 named export를 사용합니다.** 여러분이 어떤 코딩스타일을 선호할지라도, 여러분의 컴포넌트 함수들과, 이를 담고있는 파일들에 의미있는 이름을 붙여야합니다. `export default () => {}`와 같은 이름없는 컴포넌트들은 디버깅을 더 어렵게 만들기 때문에 지양해야합니다.
 
 ## 한 파일에서 여러 컴포넌트를 Importing(가져오기)과 Exporting(내보내기)하는 법
 
@@ -219,7 +218,7 @@ export default function Gallery() {
 
 > 아마 `Profile`에 대해 default 혹은 named export를 사용하실텐데, `App.js`와 `Gallery.js`에 알맞은 import 문법을 활용하셔야합니다. 위의 deep dive에 있는 테이블을 참조하실 수 있습니다.
 
-|문법|export 구문|import 구문|
+|문법|export 문|import 문|
 |------|---|---|
 |Default|` export default function Button(){}`|`import Button from './button.js;`|
 |Named|`export function Button(){}`|`import { Button } from './button.js';`
