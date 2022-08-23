@@ -34,7 +34,7 @@ export default function MyApp() {
   );
 }
 ```
-`<MyButton/>`이 대문자로 시작하는 것을 확인해 보세요. 대문자로 시작한다는 것은 <MyButton/>이 React component라는 것을 알려줍니다.
+`<MyButton/>`이 대문자로 시작하는 것을 확인해 보세요. 대문자로 시작한다는 것은 `<MyButton/>`이 React component라는 것을 알려줍니다.
 React component들의 이름은 항상 대문자로 시작합니다. 반면에, HTML 태그들은 반드시 소문자로 시작해야 합니다.
 
 결과물:
