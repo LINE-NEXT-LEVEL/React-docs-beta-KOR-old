@@ -42,7 +42,7 @@ export default function Gallery() {
 > [더 읽어보기](https://beta.reactjs.org/learn/your-first-component)
 
 
-## 컴포넌트 내보내고 불러오기
+## 컴포넌트 내보내고(Exporting) 불러오기(Importing)
 여러 컴포넌트를 하나의 파일에서 선언할 수도 있습니다. 하지만 큰 파일은 둘러보기가 불편할 수 있습니다. 이 문제를 해결하려면 컴포넌트를 적절한 파일로 _내보내기(export)_ 해야 합니다. 그리고 _불러오기(import)_를 통해 내보내진 컴포넌트를 다른 파일에서 사용할 수 있습니다.
 
 ```jsx
