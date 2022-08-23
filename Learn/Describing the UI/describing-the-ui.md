@@ -40,14 +40,14 @@ export default function Gallery() {
   );
 }
 ```
-![image](https://user-images.githubusercontent.com/53335940/186285167-b20fcd8e-a6c5-47d1-b578-e574dd77ec7f.png)
 
+![image](https://user-images.githubusercontent.com/53335940/186285167-b20fcd8e-a6c5-47d1-b578-e574dd77ec7f.png)
 
 > **이 주제에 대해 배울 준비가 되셨나요?**
 > [첫 컴포넌트](<https://beta.reactjs.org/learn/your-first-component>에 대해 읽으며 어떻게 React 컴포넌트를 선언하고 사용하는지 배워봅시다.
 > [더 읽어보기](https://beta.reactjs.org/learn/your-first-component)
-
-## 컴포넌트 내보내고 불러오기
+>
+## 컴포넌트 내보내고(Exporting) 불러오기(Importing)
 
 여러 컴포넌트를 하나의 파일에서 선언할 수도 있습니다. 하지만 큰 파일은 둘러보기가 불편할 수 있습니다. 이 문제를 해결하려면 컴포넌트를 적절한 파일로 _내보내기(export)_ 해야 합니다. 그리고 _불러오기(import)_를 통해 내보내진 컴포넌트를 다른 파일에서 사용할 수 있습니다.
 
