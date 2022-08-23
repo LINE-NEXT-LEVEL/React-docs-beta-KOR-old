@@ -6,3 +6,10 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+.idea
+node_modules
+package-lock.json
+package.json
+React-docs-beta-KOR.iml
+
