@@ -47,7 +47,7 @@ HTML 태그와 같이, 여러분은 모든 페이지를 디자인하는 데 컴�
 
 ## 컴포넌트를 정의하기
 
-전통적으로 웹페이지를 만들 때, 웹 개발자들은 내용물을 marked up한 뒤 JavaScript를 첨가하여 상호작용을 추가했습니다. 웹에서 상호작용이 보조적인 요소일 때 이런 방식이 잘 작동했습니다. 지금은 많은 사이트와 모든 앱에서 상호작용이 기대되고 있습니다. React는 같은 기술을 여전히 사용하지만 상호작용을 첫번째로 넣습니다: React 컴포넌트는 마크업을 첨가하는 JavaScript 함수입니다. 아래 예시가 어떻게 보이시나요([code sandbox](https://codesandbox.io/s/wn5or1?file=%2FApp.js&from-sandpack=true)에서 아래 예시를 수정할 수 있습니다):
+전통적으로 웹페이지를 만들 때, 웹 개발자들은 내용물을 marked up한 뒤 JavaScript를 첨가하여 상호작용을 추가했습니다. 웹에서 상호작용이 보조적인 요소일 때 이런 방식이 잘 작동했습니다. 지금은 많은 사이트와 모든 앱에서 상호작용이 기대되고 있습니다. React는 같은 기술을 여전히 사용하지만 상호작용을 첫번째로 넣습니다: React 컴포넌트는 마크업을 첨가하는 JavaScript 함수입니다. 아래 예시가 어떻게 보이시나요([CodeSandbox](https://codesandbox.io/s/wn5or1?file=%2FApp.js&from-sandpack=true)에서 아래 예시를 수정할 수 있습니다):
 
 ```JavaScript
 // App.js
@@ -173,9 +173,10 @@ React의 첫 단계를 완수했습니다! 핵심 요소들을 요약해 봅시�
 > ### 도전 1: 컴포넌트 export하기
 >
 > **도전 1: 컴포넌트 export하기**
-> root 컴포넌트가 export되지 않았기 때문에 [code sandbox](https://codesandbox.io/s/pb3f9q?file=%2FApp.js&from-sandpack=true)는 작동하지 않습니다:
+>
+> root 컴포넌트가 export되지 않았기 때문에 [CodeSandbox](https://codesandbox.io/s/pb3f9q?file=%2FApp.js&from-sandpack=true)는 작동하지 않습니다:
 
-([code sandbox](https://codesandbox.io/s/pb3f9q?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/pb3f9q?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -195,10 +196,11 @@ function Profile() {
 > 해결방안을 보기 전에 스스로 고쳐보세요!
 
 > **정답**
+>
 > `export default`를 아래 코드와 같이 함수 정의 앞에 추가합니다:
 > `export`만 쓰는 것으로 이 예제가 고쳐지지 않는 이유를 궁금해할 수도 있습니다. `export`와 `export default` 사이에 차이를 [Importing and Exporting Components](https://beta.reactjs.org/learn/importing-and-exporting-components)에서 배울 수 있습니다.
 
-([code sandbox](https://codesandbox.io/s/1q1644?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/1q1644?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -219,9 +221,10 @@ export default function Profile() {
 > ### 도전 2: 반환 문구를 수정하기
 >
 > ***도전 2: 반환 문구를 수정하기***
+>
 > `return` 문구에서 바르지 않은 것이 있습니다. 수정해보세요.
 
-([code sandbox](https://codesandbox.io/s/com4oq?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/com4oq?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -234,10 +237,15 @@ export default function Profile() {
 
 ![image](https://user-images.githubusercontent.com/55529617/186284588-571505a9-1d73-4cd1-98f4-5167700ff124.png)
 
+> **힌트**
+>
+> 수정하는 동안 "Unexpected token" 오류를 볼 것입니다. 이런 경우, 닫는 소괄호 바로 직후에 ";"이 있는지 확인하세요. `return ( )` 안에 ";"을 남기는 것이 오류의 원인일 것입니다.
+
 > **정답**
+>
 > 아래 코드와 같이 return 문구를 한 라인에 있도록 옮기면 컴포넌트가 동작합니다.
 
-([code sandbox](https://codesandbox.io/s/838hye?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/838hye?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -251,7 +259,7 @@ export default function Profile() {
 
 > 또는 `return` 바로 뒤에 소괄호를 열어서 JSX 마크업을 감싸면 됩니다.
 
-([code sandbox](https://codesandbox.io/s/vq3fi6?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/vq3fi6?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -271,9 +279,10 @@ export default function Profile() {
 > ### 도전 3: 실수 찾기
 >
 > **도전 3: 실수 찾기**
+>
 > `Profile` 컴포넌트가 선언되고 사용되는 방식에 문제가 있습니다. 실수를 찾아보세요. (React가 HTML 태그와 컴포넌트를 구분하는 방법을 기억해보세요!)
 
-([code sandbox](https://codesandbox.io/s/dphpgc?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/dphpgc?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -303,10 +312,11 @@ export default function Gallery() {
 ![image](https://user-images.githubusercontent.com/55529617/186284654-19460117-ce45-436a-90f1-d5cc654ec52c.png)
 
 > **정답**
+>
 > React 컴포넌트 이름은 대문자로 시작해야 합니다.
 > `function profile()`을 `function Profile()`로 바꾸고 모든 `<profile />`을 `<Profile />`로 바꾸세요:
 
-([code sandbox](https://codesandbox.io/s/zzszdd?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/zzszdd?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -337,9 +347,10 @@ export default function Gallery() {
 > ### 도전 4: 여러분만의 컴포넌트
 >
 > **도전 4: 여러분만의 컴포넌트**
+>
 > 컴포넌트를 처음부터 작성해 보세요. 컴포넌트에 적당한 이름을 짓고 마크업을 반환하세요. 만약 생각나는 게 없다면, `<h1>Good job!</h1>`을 보여주는 `Congratulations` 컴포넌트를 작성하세요. 컴포넌트를 export하는 것을 잊지마세요!
 
-([code sandbox](https://codesandbox.io/s/lg4tki?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/lg4tki?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
 
 ```JavaScript
 // App.js
@@ -350,7 +361,7 @@ export default function Gallery() {
 
 > **정답**
 
-([code sandbox](https://codesandbox.io/s/xp5l9t?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
+([CodeSandbox](https://codesandbox.io/s/xp5l9t?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
 ```JavaScript
 // App.js
