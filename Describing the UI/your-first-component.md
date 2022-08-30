@@ -156,15 +156,15 @@ export default function Gallery() {
 
 > **깊이 파고들기**
 >
-> ## Components All the Way Down
+> ## 모든 곳에 사용되는 컴포넌트
 >
-> React 앱은 "root" 컴포넌트에서 시작합니다. 보통 새 프로젝트를 시작할 때 자동으로 만들어집니다. 예를 들어, 여러분이 [CodeSandbox](https://codesandbox.io/) 또는 [Create React App](https://create-react-app.dev/)를 사용한다면, root 컴포넌트는 `src/App.js`에 선언됩니다. 프레임워크 [Next.js](https://nextjs.org/)를 사용한다면, root 컴포넌트는 `pages/index.js`에 선언됩니다. 이런 예시들처럼 여러분은 root 컴포넌트들을 export해왔습니다.
+> React 앱은 "root" 컴포넌트에서 시작합니다. 보통 새 프로젝트를 시작할 때 자동으로 만들어집니다. 예를 들어, 여러분이 [CodeSandbox](https://codesandbox.io/) 또는 [Create React App](https://create-react-app.dev/)를 사용한다면, root 컴포넌트는 `src/App.js`에 선언됩니다. 프레임워크 [Next.js](https://nextjs.org/)를 사용한다면, root 컴포넌트는 `pages/index.js`에 선언됩니다. root 컴포넌트가 선언된 예시들 안에서 여러분은 root 컴포넌트들을 export해왔습니다.
 >
-> 대부분의 React 앱들은 컴포넌트를 아래 방향으로 사용합니다. 이는 여러분이 버튼과 같은 재사용하는 조각 컴포넌트들도 사용하고 사이드바, 목록, 그리고 온전한 페이지들과 같은 큰 조각 컴포넌트들도 사용한다는 의미입니다. 컴포넌트들 중 몇 개는 한번만 사용되더라도 컴포넌트는 UI와 마크업을 구성하는데 편리한 방식입니다.
+> 대부분의 React 앱들은 컴포넌트를 처음부터 끝까지 사용합니다. 이는 여러분이 버튼과 같은 재사용하는 조각 컴포넌트들도 사용하고 사이드바, 목록, 그리고 온전한 페이지들과 같은 큰 조각 컴포넌트들도 사용한다는 의미입니다. 컴포넌트들 중 몇 개는 한번만 사용되더라도 컴포넌트는 UI와 마크업을 구성하는데 편리한 방식입니다.
 >
-> Next.js와 같은 프레임워크는 더 앞서서 이 방식을 고수합니다. 빈 HTML 파일을 사용하고 React가 JavaScript로 페이지를 "독점"하는 것 대신에 React 컴포넌트들에서 자동적으로 HTML을 만들어 냅니다. 이는 JavaScript 코드가 가져와지기 전에 다른 컨텐츠를 앱에서 보여줄 수 있습니다.
+> Next.js와 같은 프레임워크는 이를 한 단계 더 발전시킵니다. 빈 HTML 파일을 사용하고 React가 JavaScript로 페이지 관리를 "독점"하는 것 대신에 React 컴포넌트들에서 HTML을 자동으로 만들어 냅니다. 이는 JavaScript 코드가 가져와지기 전에 일부 컨텐츠를 앱에서 보여줄 수 있습니다.
 >
-> 여전히, 많은 웹사이트들이 React를 [상호작용을 위한 보조](https://beta.reactjs.org/learn/add-react-to-a-website)로만 사용합니다. 그 웹사이트들은 전체 페이지에서 단 하나의 root 컴포넌트들 대신 많은 root 컴포넌트들을 가지고 있습니다. 충분히 많게 또는 충분히 적게 React를 필요한 만큼 사용할 수 있습니다.
+> 여전히, 많은 웹사이트들이 React를 [상호작용을 위한 보조](https://beta.reactjs.org/learn/add-react-to-a-website)로만 사용합니다. 그 웹사이트들은 전체 페이지에서 하나의 root 컴포넌트들 대신 많은 root 컴포넌트들을 가지고 있습니다. 여러분은 충분히 많게 또는 충분히 적게 React를 필요한 만큼 사용할 수 있습니다.
 
 ## 요약
 
