@@ -38,8 +38,6 @@ export default function MyApp() {
 }
 ```
 
-[코드 실행해보기](https://codesandbox.io/s/4c3fsr?file=/App.js&from-sandpack=true)
-
 `<MyButton/>`이 대문자로 시작하는 것을 확인해 보세요. 대문자로 시작한다는 것은 <MyButton/>이 React component라는 것을 알려줍니다.
 
 React component들의 이름은 항상 대문자로 시작합니다. 반면에, HTML 태그들은 반드시 소문자로 시작해야 합니다.
@@ -66,6 +64,7 @@ export default function MyApp() {
   );
 }
 ```
+[CodeSandBox](https://codesandbox.io/s/4c3fsr?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 `export default` 키워드는 해당 파일의 메인 component를 명시합니다. 
 Javascript 문법에 익숙하지 않다면, [MDN](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)이나 [javascript.info](https://javascript.info/import-export) 가 좋은 참고자료가 됩니다. 
@@ -165,7 +164,7 @@ export default function Profile() {
 }
 ```
 
-[코드 실행해보기](https://codesandbox.io/s/28sul6?file=/App.js&from-sandpack=true)
+[CodeSandBox](https://codesandbox.io/s/28sul6?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 위의 예시에서, `style={{}}`은 특별한 구문이 아니고, 일반적인 `{}` 객체를 JSX 중괄호 `style={ }` 안에 넣은 것입니다. 
 JavaScript 변수들에 의존하는 style을 사용할 때 `style` 속성을 사용할 수 있습니다.
@@ -264,7 +263,7 @@ export default function ShoppingList() {
   );
 }
 ```
-[코드 실행해보기](https://codesandbox.io/s/d7pslb?file=%2FApp.js&from-sandpack=true)
+[CodeSandBox](https://codesandbox.io/s/d7pslb?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 ## 이벤트에 반응하기
 
@@ -359,7 +358,7 @@ export default function MyApp() {
 }
 ```
 
-[코드 실행해보기](https://codesandbox.io/s/tsr5ln?file=%2FApp.js&from-sandpack=true)
+[CodeSandBox](https://codesandbox.io/s/tsr5ln?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 각각의 버튼이 어떻게 서로에게 영향을 미치지 않으면서 갖고 있는 `count`값을 "기억"하는지 확인해보세요. 
 
@@ -473,7 +472,7 @@ export default function MyApp() {
 }
 ``` 
 
-[코드 실행해보기](https://codesandbox.io/s/ozrvv8?file=%2FApp.js&from-sandpack=true)
+[CodeSandBox](https://codesandbox.io/s/ozrvv8?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 ## 다음 단계
 
