@@ -64,6 +64,8 @@ export default function MyApp() {
   );
 }
 ```
+<img width="507" alt="스크린샷 2022-09-06 오전 1 31 44" src="https://user-images.githubusercontent.com/52595663/188489931-da3770db-1fdc-467b-a48d-4ec673195bad.png">
+
 [CodeSandBox](https://codesandbox.io/s/4c3fsr?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 `export default` 키워드는 해당 파일의 메인 component를 명시합니다. 
@@ -163,6 +165,7 @@ export default function Profile() {
   );
 }
 ```
+<img width="510" alt="스크린샷 2022-09-06 오전 1 33 09" src="https://user-images.githubusercontent.com/52595663/188489984-f25e888f-702b-4038-8aaa-f869583c9d6f.png">
 
 [CodeSandBox](https://codesandbox.io/s/28sul6?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
@@ -263,6 +266,8 @@ export default function ShoppingList() {
   );
 }
 ```
+<img width="518" alt="스크린샷 2022-09-06 오전 1 33 38" src="https://user-images.githubusercontent.com/52595663/188490020-b5acb7dd-fb8e-459a-b1a8-ff542a914c3f.png">
+
 [CodeSandBox](https://codesandbox.io/s/d7pslb?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
 ## 이벤트에 반응하기
@@ -357,6 +362,7 @@ export default function MyApp() {
   );
 }
 ```
+<img width="512" alt="스크린샷 2022-09-06 오전 1 34 04" src="https://user-images.githubusercontent.com/52595663/188490059-896433de-744f-4ebc-99e1-f466bc155b42.png">
 
 [CodeSandBox](https://codesandbox.io/s/tsr5ln?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
@@ -372,15 +378,21 @@ Hook은 보통의 함수보다 더 제한적입니다. 컴포넌트의 상위 �
 
 이전 예시에서, 각각의 `MyButton`은 독립적인 `count`를 갖고 있었습니다. 그리고 각 버튼이 클릭되면, 클릭된 버튼의 `count`만 변했습니다:
 
+<img width="894" alt="스크린샷 2022-09-06 오전 1 34 27" src="https://user-images.githubusercontent.com/52595663/188490144-e515d6b6-f25e-4b75-8f66-ae70a729535f.png">
+
+
 하지만, 데이터를 공유하고 항상 같이 업데이트 되어야 하는 컴포넌트들도 종종 필요할 겁니다. 
 
 `MyButton` 컴포넌트 둘다 같은 `count`를 보여주고 같이 업데이트 되도록 하기 위해, 개별적인 버튼에서 버튼들을 모두 포함하는 가장 가까운 상위의 컴포넌트로 상태를 옮길 필요가 있습니다. 
 
 `MyApp`의 경우입니다: 
 
+<img width="870" alt="스크린샷 2022-09-06 오전 1 35 24" src="https://user-images.githubusercontent.com/52595663/188490213-8601888e-701c-4a9d-b28e-caaf136b6029.png">
+
 이제 어떤 버튼을 클릭하든 상관 없이 `MyApp`의 `count`는 변하고, `MyButton`의 카운트들 전부 변합니다. 이것을 코드로 표현하면 다음과 같습니다. 
 
 먼저, `MyButton`에서 `MyApp`으로 상태를 올립니다:
+
 
 ```javascript
 function MyButton() {
@@ -471,6 +483,7 @@ export default function MyApp() {
   );
 }
 ``` 
+<img width="513" alt="스크린샷 2022-09-06 오전 1 36 17" src="https://user-images.githubusercontent.com/52595663/188490253-f528b38b-ba5e-4b1b-a21a-f71c5983dd06.png">
 
 [CodeSandBox](https://codesandbox.io/s/ozrvv8?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
