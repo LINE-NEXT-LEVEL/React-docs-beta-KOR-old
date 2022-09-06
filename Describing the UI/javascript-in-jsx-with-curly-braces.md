@@ -140,7 +140,7 @@ export default function TodoList() {
 
 > **주의 사항**
 >
-> 인라인 `style` 속성은 카멜케이스(camelCase)로 작성됩니다. 예를 들어 HTML 코드인 `<ul style="background-color: black">`는 컴포넌트에서 `<ul style={{ backgroundColor: 'black' }}>` 이렇게 작성되어야 합니다.
+> 인라인 `style` 속성은 카멜케이스(camelCase)로 작성됩니다. 예를 들어 HTML 코드인 `<ul style="background-color: black">`는 컴포넌트에서 `<ul style={{ backgroundColor: 'black' }}>` 와 같이 작성되어야 합니다.
 
 ## JavaScript 객체와 중괄호에 대한 더 재밌는 사실들
 
