@@ -88,7 +88,8 @@ export default function TodoList() {
 
 ### 1. 하나의 root element를 리턴해주자
 
-컴포넌트에서 여러개의 element를 돌려주려면 하나의 부모 태그로 감싸줘야합니다. 예를 들어 <div>를 감싸주는 태그로 사용해볼 수 있습니다:
+컴포넌트에서 여러개의 element를 돌려주려면 하나의 부모 태그로 감싸줘야합니다. 
+예를 들어, `<div>`를 감싸주는 태그로 사용해볼 수 있습니다:
 
 ```javascript
 <div>
