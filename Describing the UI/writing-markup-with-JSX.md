@@ -10,11 +10,11 @@ _JSX_ 는 JavaScript 파일 안에서 HTML 같은 마크업을 작성하게 해�
 ## JSX: JavaScript안에 마크업을 넣기
 웹은 HTML, CSS, JavaScript로 만들어져왔습니다. 수년간 웹 개발자들은 HTML 안에 내용, CSS안에는 디자인, JavaScript 안에는 로직을 넣었습니다. 종종 분리된 파일로도 작성했습니다. 페이지의 로직이 JavaScript에 분리되어 실행되는 동안 콘텐츠는 HTML에서 마크업 됩니다. 
 
-
+<img width="769" alt="스크린샷 2022-09-06 오후 11 55 50" src="https://user-images.githubusercontent.com/52595663/188667915-478abf86-0637-48d3-b8ef-78af6c700f30.png">
 
 하지만 웹은 더 인터랙티브해졌고, 로직이 컨텐츠를 결정하는 일이 많아지면서 JavaScript가 HTML을 담당하게 되었습니다. 그래서 **React에서는 렌더링 로직과 마크업이 컴포넌트로 같은 위치에 있게 되었습니다.-이것을 컴포넌트라 합니다.** 
 
-
+<img width="774" alt="스크린샷 2022-09-06 오후 11 56 19" src="https://user-images.githubusercontent.com/52595663/188668013-856d9808-00d7-45e2-9d42-2cd19fe787b5.png">
 
 버튼의 렌더링 로직과 마크업을 같이 유지하면 서로가 수정될 때 확실하게 동기화되도록 해줍니다. 반대로, 버튼의 마크업이나 사이드바의 마크업 같이 서로 관계 없는 구체적인 부분은 완전히 분리되어서 각각을 수정하는게 더 안전합니다.
 
@@ -73,8 +73,8 @@ export default function TodoList() {
   );
 }
 ```
+<img width="524" alt="스크린샷 2022-09-06 오후 11 56 46" src="https://user-images.githubusercontent.com/52595663/188668134-ddfe697d-7a0c-4001-918a-ccc2eed7c6f2.png">
 
-![결과 이미지](../img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-08-24%20%EC%98%A4%EC%A0%84%208.38.14.png)
 [CodeSandbox](https://codesandbox.io/s/o7zoc2?file=%2FApp.js&from-sandpack=true)
 제대로 실행이 안되는 이유는 JSX가 HTML보다 더 엄격하고 몇 가지 규칙이 더 있기 때문입니다. 위에 에러 메세지를 읽어보면, 마크업을 고칠 수 있는 방법이 나와있습니다. 또는 아래에 가이드를 따라가면서 수정해볼 수 있습니다.
 
@@ -191,6 +191,7 @@ export default function TodoList() {
     </>
   );
 ```
+<img width="519" alt="스크린샷 2022-09-06 오후 11 57 21" src="https://user-images.githubusercontent.com/52595663/188668271-cfdf2097-10ef-4997-87ad-3f7d01ee569e.png">
 
 [CodeSandBox](https://codesandbox.io/s/q2blb9?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
