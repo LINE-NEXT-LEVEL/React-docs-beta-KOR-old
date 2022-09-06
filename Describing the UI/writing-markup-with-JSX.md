@@ -76,9 +76,7 @@ export default function TodoList() {
 ```
 
 ![결과 이미지](../img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-08-24%20%EC%98%A4%EC%A0%84%208.38.14.png)
-
-[코드 실행해보기](https://codesandbox.io/s/o7zoc2?file=%2FApp.js&from-sandpack=true)
-
+[CodeSandbox](https://codesandbox.io/s/o7zoc2?file=%2FApp.js&from-sandpack=true)
 제대로 실행이 안되는 이유는 JSX가 HTML보다 더 엄격하고 몇 가지 규칙이 더 있기 때문입니다. 위에 에러 메세지를 읽어보면, 마크업을 고칠 수 있는 방법이 나와있습니다. 또는 아래에 가이드를 따라가면서 수정해볼 수 있습니다.
 
 > **노트**
