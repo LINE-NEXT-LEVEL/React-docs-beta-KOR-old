@@ -43,7 +43,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759381-a0908c4b-f452-4828-99ce-8803e8103fb3.png)
 
 `Item` 컴포넌트들 중 몇 개는 `isPacked` prop을 `false` 대신에 `true`로 설정했습니다. `isPacked={true}`일 경우에 물건들을 싸는 것이므로 체크표시(✔)를 추가해야 합니다.
 
@@ -92,7 +92,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759393-4a0e25de-5865-4820-881b-69b2b5e36925.png)
 
 다른 경우에 무엇이 반환되는지 [CodeSandbox]를 수정해보고 결과가 어떻게 변화하는지 보세요!
 
@@ -145,7 +145,7 @@ export default function PackingList() {
 
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759410-9fd38613-fb4b-42b1-8362-e63ea675ec40.png)
 
 실전에서 컴포넌트에서 `null`을 반환하는 것은 흔한 일이 아닌데 왜냐하면 렌더링을 시도하는 개발자가 놀랄 수 있기 때문입니다. 일반적으로 여러분은 부모 컴포넌트의 JSX에서 그 컴포넌트를 조건에 맞추어 포함하거나 제외합니다. 아래 글에서 어떻게 하는지 적혀있습니다!
 
@@ -248,7 +248,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759461-98dbe8ec-fff7-4380-a6e6-39ec91b63806.png)
 
 ## 논리적인 AND 연산자(`&&`)
 
@@ -299,6 +299,8 @@ export default function PackingList() {
   );
 }
 ```
+
+![image](https://user-images.githubusercontent.com/55529617/188759487-283101be-e1ac-4d56-8437-5fb9e2641d4f.png)
 
 > **경고**
 >
@@ -374,7 +376,7 @@ export default function PackingList() {
 
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759569-495cee16-16c3-4a64-85b3-7eecd97fd7e0.png)
 
 이전처럼, 이 코드는 글자뿐만 아니라 추상화된 JSX에서도 동작합니다.
 
@@ -420,7 +422,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759583-0d63a737-367c-4810-aed1-870fc4ad345b.png)
 
 JavaScript에 익숙하지 않다면, 다양한 스타일은 처음에 버겁게 느껴질지도 모릅니다. 하지만, 이 스타일들을 배우는 것은 리엑트 컴포넌트뿐만 아니라 어떤 JavaScript 코드라도 읽고 쓰는 데 도움이 됩니다! 처음 시작하기에 더 좋은 스타일을 고르고나서 다른 것이 어떻게 동작하는지 잊었을 때 이 글을 다시 읽어보세요.
 
@@ -475,7 +477,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759634-3dd1d145-ed94-4d9a-82f9-048a7d1ca344.png)
 
 > **정답**
 
@@ -512,7 +514,7 @@ export default function PackingList() {
 
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759664-3eb456b6-37b2-4a60-aef4-aec1bc4725da.png)
 
 ([CodeSandbox](https://codesandbox.io/s/8zscn7?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
@@ -560,7 +562,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759740-cf1d32d6-5a61-4e92-a0ac-680a69bc55d2.png)
 
 > **정답**
 >
@@ -604,7 +606,7 @@ export default function PackingList() {
 }
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759771-4a4ca8ac-3dab-4069-ba54-a4fba6aa41d9.png)
 
 > `0`이 렌더링되지 않아야 한다면 `importance`가 `0`이 있는 경우 `importance && ...`처럼 작성하지 않고 `importance > 0 && ...`처럼 작성해야 한다는 것을 기억하세요.
 >
@@ -646,7 +648,7 @@ export default function DrinkList() {
 
 ```
 
-이미지
+![image](https://user-images.githubusercontent.com/55529617/188759856-fb7e340e-edc4-41e0-818f-0f04f5d3756a.png)
 
 > `if`를 사용해 코드를 리팩토링하면서 코드를 단순화하는 방법들에 대해 더 많은 생각을 할 수 있었나요?
 
@@ -693,6 +695,8 @@ export default function DrinkList() {
 }
 ```
 
+![image](https://user-images.githubusercontent.com/55529617/188759885-e1a7d36f-defc-4fcd-84a8-debbbb9713d9.png)
+
 > 각각의 음료에 대한 정보는 다양한 조건들에 걸쳐 뿌려져 있는 것 대신에 함께 묶여 있습니다. 이것은 향후 더 많은 음료들을 추가하는 것을 쉽게 만듭니다.
 >
 > 또다른 해결방안은 정보를 객체에 옮김으로서 조건들을 모두 없애는 것입니다:
@@ -737,3 +741,5 @@ export default function DrinkList() {
   );
 }
 ```
+
+![image](https://user-images.githubusercontent.com/55529617/188759896-6fd70f34-fc6b-433d-bb3d-4d831f3d47cc.png)
