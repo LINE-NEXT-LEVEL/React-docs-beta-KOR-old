@@ -121,7 +121,7 @@ export default function TodoList() {
 </>
 ```
 
-빈 태그는 React fragment라고 부릅니다. React fragment는 브라우저의 HTML 트리에서 어떤 흔적을 남기지 않고 태그들을 그룹화하게 도와줍니다.
+빈 태그는 [React fragment](https://beta.reactjs.org/learn/TODO)라고 부릅니다. React fragment는 브라우저의 HTML 트리에서 어떤 흔적을 남기지 않고 태그들을 그룹화하게 도와줍니다.
 
 > DEEP DIVE
 > **여러 개의 JSX태그는 왜 감싸져야 하나요?**
