@@ -70,7 +70,7 @@ export default function TodoList() {
 
 <img width="578" alt="스크린샷 2022-08-31 오전 1 19 52" src="https://user-images.githubusercontent.com/53335940/187488887-d40bc4c5-3828-466d-ba02-e71294d2f476.png">
 
-`name` 변수를 'Gregorio Y. Zara'에서 'Hedy Lamarr'로 바꿔보세요. 바뀐 점을 눈치 채셨나요?
+`name` 변수를 `Gregorio Y. Zara`에서 `Hedy Lamarr`로 바꿔보세요. 바뀐 점을 눈치 채셨나요?
 `formatDate()`와 같은 함수를 포함한 어떤 JavaScript 표현식도 중괄호 내부에서는 동작합니다.
 
 [CodeSandbox](https://codesandbox.io/s/iuf3k6?file=%2FApp.js&from-sandpack=true)
