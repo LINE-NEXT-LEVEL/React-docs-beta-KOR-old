@@ -29,7 +29,7 @@ export default function Avatar() {
 
 <img width="593" alt="스크린샷 2022-08-31 오전 1 09 42" src="https://user-images.githubusercontent.com/53335940/187486972-e36f790b-523d-4695-949b-4fe34b0997f2.png">
 
-여기서 `"https://i.imgur.com/7vQD0fPs.jpg"`와 `"Gregorio Y. Zara"`가 string으로서 전달되었습니다.
+여기서 `"https://i.imgur.com/7vQD0fPs.jpg"`와 `"Gregorio Y. Zara"`는 string으로 전달되었습니다.
 만약 여러분이 `src`나 `alt` 텍스트를 동적으로 지정해주고 싶다면 어떻게 해야 할까요? **`{`와 `}`로 감싸진 JavaScript 변수를 사용하면 됩니다.**
 
 [CodeSandbox](https://codesandbox.io/s/j25087?file=%2FApp.js&from-sandpack=true)
