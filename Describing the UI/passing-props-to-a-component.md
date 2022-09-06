@@ -66,7 +66,7 @@ export default function Profile() {
 }
 ```
 > `person=` 다음에 있는 두개의 중괄호가 여러분을 헷갈리게 한다면,
->  JSX 중괄호 내부의 [객체일뿐](https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces#using-double-curlies-css-and-other-objects-in-jsx)을 생각해보세요.
+>  JSX 중괄호 내부의 [객체일뿐](https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces#using-double-curlies-css-and-other-objects-in-jsx)이라고 생각해보세요.
 
 이제, 여러분은 `Avatar` 컴포넌트 내부에서 이 props들을 읽을 수 있습니다.
 
@@ -160,7 +160,7 @@ function Avatar(props) {
 >  // ...
 >}
 > ```
-> 이 문법은 [구조 분해 할당](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Unpacking_fields_from_objects_passed_as_a_function_parameter)이라고 불리며, 함수 파라미터에서 값들을 읽는 것과 같습니다
+> 이 문법은 [구조 분해](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Unpacking_fields_from_objects_passed_as_a_function_parameter)이라고 불리며, 함수 파라미터에서 값들을 읽는 것과 같습니다
 > ```js
 >function Avatar(props) {
 >  let person = props.person;
@@ -172,7 +172,7 @@ function Avatar(props) {
 ## prop을 위한 기본값 설정
 
 만약 여러분이 prop의 값이 정해지지 않았을때 기본값을 지정하고 싶다면,
-구조분해할당(destructuring)을 하면서 `=`와 기본값을 파라미터 다음에 넣어주면 됩니다
+구조분해(destructuring)를 하면서 `=`와 기본값을 파라미터 다음에 넣어주면 됩니다
 ```js
 function Avatar({ person, size = 100 }) {
   // ...
@@ -323,9 +323,9 @@ Props는 시작하는 순간뿐 아니라, 매 순간 컴포넌트의 데이터�
 
 ## 요약
 - props를 전달하기 위해서는, HTML 속성처럼 JSX에 추가하세요.
-- props를 읽기 위해서는 `function Avatar({person, size})` 구조 분해 할당(destructuring) 구문을 활용하세요.
-- 지정되지 않거나, undefined인 props에 활용되는 기본 값을 `size = 100`과 같이 지정할 수 있습니다.
-- `<Avatar {...pops}>`와 같은 JSX spread 구문으로 모든 props를 넘길 수 있지만, 너무 많이 쓰지는 마세요.
+- props를 읽기 위해서는 `function Avatar({person, size})` 구조 분해(destructuring) 구문을 활용하세요.
+- 지정되지 않거나, `undefined`인 props에 활용되는 기본 값을 `size = 100`과 같이 지정할 수 있습니다.
+- `<Avatar {...props}>`와 같은 JSX spread 구문으로 모든 props를 넘길 수 있지만, 너무 많이 쓰지는 마세요.
 - `<Card><Avatar /></Card>`와 같은 중첩 JSX는 `Card`컴포넌트의 `children` prop으로 표현될 수 있습니다.
 - props는 순간의 읽기전용 스냅샷입니다. 매 렌더링마다 새 props를 받아오게 됩니다.
 - 여러분은 props를 변경할 수 없습니다. 상호작용이 필요할때는 set state가 필요합니다.
