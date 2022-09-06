@@ -102,7 +102,7 @@ export default function TodoList() {
 </div>
 ```
 
-만약 추가로 `<div>`를 넣고 싶지 않으면 `<>`와`</>`를 대신 사용하면 됩니다.:
+만약 추가로 `<div>`를 넣고 싶지 않으면 `<>`와`</>`를 대신 사용하면 됩니다:
 
 ```javascript
 <>
