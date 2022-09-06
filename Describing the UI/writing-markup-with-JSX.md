@@ -7,8 +7,7 @@ _JSX_ 는 JavaScript 파일 안에서 HTML 같은 마크업을 작성하게 해�
 > - JSX가 HTML과 다른 점
 > - JSX로 정보를 표현하는 방법
 
-## JSX: JavaScript안에 마크업을 넣은 것
-
+## JSX: JavaScript안에 마크업을 넣기
 웹은 HTML, CSS, JavaScript로 만들어져왔습니다. 수년간 웹 개발자들은 HTML 안에 내용, CSS안에는 디자인, JavaScript 안에는 로직을 넣었습니다. 종종 분리된 파일로도 작성했습니다. 페이지의 로직이 JavaScript에 분리되어 실행되는 동안 콘텐츠는 HTML에서 마크업 됩니다. 
 
 ![참고 이미지](../img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-08-24%20%EC%98%A4%EC%A0%84%208.20.06.png)
