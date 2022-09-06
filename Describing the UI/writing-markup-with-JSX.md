@@ -10,11 +10,11 @@ _JSX_ 는 JavaScript 파일 안에서 HTML 같은 마크업을 작성하게 해�
 ## JSX: JavaScript안에 마크업을 넣기
 웹은 HTML, CSS, JavaScript로 만들어져왔습니다. 수년간 웹 개발자들은 HTML 안에 내용, CSS안에는 디자인, JavaScript 안에는 로직을 넣었습니다. 종종 분리된 파일로도 작성했습니다. 페이지의 로직이 JavaScript에 분리되어 실행되는 동안 콘텐츠는 HTML에서 마크업 됩니다. 
 
-![참고 이미지](../img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-08-24%20%EC%98%A4%EC%A0%84%208.20.06.png)
 
-하지만 웹은 더 인터랙티브해졌고, 로직이 컨텐츠를 결정하는 일이 많아지면서 JavaScript가 HTML을 담당하게 되었습니다. 그래서 React에서는 렌더링 로직과 마크업이 컴포넌트로 같은 위치에 있게 되었습니다. 
 
-![참고이미지](../img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-08-24%20%EC%98%A4%EC%A0%84%208.25.56.png)
+하지만 웹은 더 인터랙티브해졌고, 로직이 컨텐츠를 결정하는 일이 많아지면서 JavaScript가 HTML을 담당하게 되었습니다. 그래서 **React에서는 렌더링 로직과 마크업이 컴포넌트로 같은 위치에 있게 되었습니다.-이것을 컴포넌트라 합니다.** 
+
+
 
 버튼의 렌더링 로직과 마크업을 같이 유지하면 서로가 수정될 때 확실하게 동기화되도록 해줍니다. 반대로, 버튼의 마크업이나 사이드바의 마크업 같이 서로 관계 없는 구체적인 부분은 완전히 분리되어서 각각을 수정하는게 더 안전합니다.
 
@@ -146,8 +146,83 @@ JSX는 완전히 닫힌 태그를 요구합니다. 스스로 닫는 기능이 �
 </>
 ```
 
-### 3. 모든 것에 camelCase를 사용하자
+### 3. 모든 것에 camelCase를 사용하자!
 
-JSX가 JavaScript로 변환되면서 JSX로 쓰여진 속성들은 JavaScript 객체의 키가 됩니다. 
+JSX가 JavaScript로 변환되면서 JSX로 쓰여진 속성들은 JavaScript 객체의 키가 됩니다. 컴포넌트를 사용하면서, 종종 속성들을 변수로 읽고 싶을 것입니다. 하지만 JavaScript는 변수명에 제약이 있습니다. 예를 들면, 변수명은 대시(—)를 포함할 수 없고, `class`와 같은 예약된 단어를 사용할 수 없습니다. 
 
+이러한 이유로 React에서는 camelCase로 많은 HTML과 SVG 속성들을 적습니다. 예를 들어, `stroke-width` 대신에 `strokeWidth`를 사용합니다. `class`가 예약어이기 때문에 React에서는 [해당하는 Dom 요소](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)를 이름 짓는데 `className`을 사용합니다. 
 
+```JSX
+<img 
+  src="https://i.imgur.com/yXOvdOSs.jpg" 
+  alt="Hedy Lamarr" 
+  className="photo"
+/>
+```
+
+여러분은 모든 [React Dom element](https://beta.reactjs.org/TODO)들의 속성을 찾아볼 수 있습니다. 잘못할까봐 걱정하지 마세요 - React가 브라우저 콘솔에 수정 예시 메세지를 프린트해줄 겁니다. 
+
+## 조심할 사항
+
+> 과거의 흔적으로, `area-*`와`data-*`는 HTML에서 대시(-)와 같이 쓰입니다.
+
+## 꿀팁: JSX 변환기를 사용하자
+
+이미 있는 마크업의 속성들을 모두 바꾸는 것은 지루한 작업일 수 있습니다! 이미 있는 HTML과 SVG를 JSX로 바꾸는데 [변환기](https://transform.tools/html-to-jsx)를 사용하기를 권합니다. 변환기는 매우 실용적이지만, 여전히 스스로 JSX를 편안하게 작성할 수 있도록 어떻게 돌아가는지는 이해할 필요가 있습니다. 
+
+여기 최종 결과물입니다: 
+
+```JSX
+//App.js
+export default function TodoList() {
+  return (
+    <>
+      <h1>Hedy Lamarr's Todos</h1>
+      <img 
+        src="https://i.imgur.com/yXOvdOSs.jpg" 
+        alt="Hedy Lamarr" 
+        className="photo" 
+      />
+      <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve the spectrum technology</li>
+      </ul>
+    </>
+  );
+```
+
+[CodeSandBox](https://codesandbox.io/s/q2blb9?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
+
+## 복습하기
+
+이제 왜 JSX가 있고 JSX를 어떻게 컴포넌트로 사용하는지 배웠습니다.
+
+- React component는 렌더링 로직과 마크업이 연관되어 있기 때문에 하나로 묶어줍니다.
+- JSX는 몇 가지 차이를 제외하곤 HTML과 비슷합니다. 필요하면 [변환기](https://transform.tools/html-to-jsx)를 사용할 수 있습니다. 
+- 종종 에러 메세지가 마크업을 옳은 방향으로 수정하도록 짚어줄 수 있습니다.
+
+## 도전 과제
+
+### 도전 과제1 : HTML을 JSX로 바꾸기
+
+컴포넌트에 HTML이 전달되었는데 적절한 JSX가 아집니다. 고쳐보세요:
+
+```JSX
+//App.js
+export default function Bio() {
+  return (
+    <div class="intro">
+      <h1>Welcome to my website!</h1>
+    </div>
+    <p class="summary">
+      You can find my thoughts here.
+      <br><br>
+      <b>And <i>pictures</b></i> of scientists!
+    </p>
+  );
+}
+```
+[CodeSandBox](https://codesandbox.io/s/o3j6fk?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.
+
+손으로 해볼 지 변환기를 사용할 지는 자유입니다!
