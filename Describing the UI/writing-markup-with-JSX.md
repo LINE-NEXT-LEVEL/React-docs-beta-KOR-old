@@ -130,7 +130,7 @@ export default function TodoList() {
 
 ### 2. 모든 태그를 닫자
 
-JSX는 완전히 닫힌 태그를 요구합니다. 스스로 닫는 기능이 있는 `<img>`도 `<img />`가 되어야 합니다. 그리고 `<li>oranges`처럼 감싸주는 태그들은 `<li>oranges</li>`으로 적어야 합니다.
+JSX는 완전히 닫힌 태그를 요구합니다. 스스로 닫는 기능이 있는 `<img>`도 `<img />`가 되어야 합니다. 그리고 `<li>oranges`처럼 감싸주는 태그들은 `<li>oranges</li>`로 적어야 합니다.
 
 아래는 Hedy Lamarr의 사진과 리스트 아이템이 닫힌 태그로 구성된 모습입니다. 
 
