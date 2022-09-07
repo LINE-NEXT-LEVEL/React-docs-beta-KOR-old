@@ -15,7 +15,7 @@ React 컴포넌트는 서로 소통하는데에 _props_를 사용합니다.
 Props는 여러분이 JSX 태그로 넘길 수 있는 정보입니다. 예를들어
 `className`, `src`, `alt`, `width`, `height`는 여러분이 `<img>`에 넘겨줄 수 있는 props입니다.
 
-[CodeSandbox](https://codesandbox.io/s/5gwdmf?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/5gwdmf?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 ```js
 function Avatar() {
   return (
@@ -81,7 +81,7 @@ function Avatar({ person, size }) {
 ```
 `Avatar`에 `person`과 `size` props를 활용하여 렌더링될 로직을 추가하면, 다 된 것 입니다.
 이제 여러분은 `Avatar`를 다른 props들로 많은 방법들로 렌더링되게 할 수 있습니다. 변수 값들을 수정해보세요!
-[CodeSanbox](https://codesandbox.io/s/5x2t1l?file=/App.js&from-sandpack=true)
+[CodeSanbox](https://codesandbox.io/s/5x2t1l?file=/App.js&from-sandpack=true)에서 직접 코드를 수정할 수 있습니다.
 
 ```js
 //App.js
@@ -142,7 +142,7 @@ Props는 여러분이 부모 컴포넌트와 자식 컴포넌트를 별개로 �
 
 여러분은 props를 여러분이 조정할 수 있는 "손잡이"로 생각할 수 있습니다.
 function(함수)에서 arguments(인자)가 하는 역할과 같은 역할을 수행합니다.
-사실, props는 여러분의 컴포넌트의 유일한 인자입니다! React 컴포넌트 함수들은 하나의 인자로 `props` 객체를 받습니다
+사실, props _들은_ 여러분의 컴포넌트의 유일한 인자입니다! React 컴포넌트 함수들은 하나의 인자로 `props` 객체를 받습니다
 ```js
 function Avatar(props) {
   let person = props.person;
@@ -169,7 +169,7 @@ function Avatar(props) {
 >}
 > ```
 
-## prop을 위한 기본값 설정
+## prop에 기본값 설정하기
 
 만약 여러분이 prop의 값이 정해지지 않았을때 기본값을 지정하고 싶다면,
 구조분해(destructuring)를 하면서 `=`와 기본값을 파라미터 다음에 넣어주면 됩니다
@@ -180,7 +180,7 @@ function Avatar({ person, size = 100 }) {
 ```
 이제 만약 `<Avatar person={...} />`이 `size` prop 없이 렌더링 된다면, `size`는 `100`으로 지정될 것 입니다.
 
-기본 값은 `size` prop이 지정되지 않거나, 여러분이 `size={undefined}`를 넘겨줄 때만 활용됩니다. 하지만 여러분이 `size={null}`이나 `size={0}`을 넘겨준다면, 기본 값은 활용되지 않습니다
+기본값은 `size` prop이 지정되지 않거나, 여러분이 `size={undefined}`를 넘겨줄 때만 사용됩니다. 하지만 여러분이 `size={null}`이나 `size={0}`을 넘겨준다면, 기본값은 사용되지 않습니다
 
 ## JSX spread 구문으로 props 전달하기
 
@@ -199,8 +199,8 @@ function Profile({ person, size, isSepia, thickBorder }) {
   );
 }
 ```
-반복되는 코드에 잘못된 것은 없고, 오히려 더 읽기 쉬울 수 있습니다. 하지만 여러분은 간결함을 중요시 여길 수 있습니다. 몇 컴포넌트들은 `Profile`이 `Avatar`에 주는 것 처럼 자식 컴포넌트에 모든 props를 넘겨주기도 합니다.
-왜냐하면 props를 직접적으로 쓰진 않더라도 spread 구문으로 간결하게 쓰는 것도 합리적일 수 있습니다
+반복되는 코드에 잘못된 것은 없고, 오히려 더 읽기 쉬울 수 있습니다. 하지만 때때로 여러분은 간결함을 중요시 여길 수 있습니다. 몇 컴포넌트들은 `Profile`이 `Avatar`에 주는 것 처럼 자식 컴포넌트에 모든 props를 넘겨주기도 합니다.
+왜냐하면 props를 직접적으로 쓰지 않고 spread 구문으로 간결하게 쓰는 것이 가능하기 때문입니다.
 ```js
 function Profile(props) {
   return (
@@ -212,28 +212,28 @@ function Profile(props) {
 ```
 이처럼 `Profile`의 모든 props를 `Avatar`에게 각 이름들을 나열할 필요없이 넘겨줄 수 있습니다
 
-**spread 구문을 제한적으로 활용하세요.** 모든 다른 컴포넌트에서 활용한다면 어떤 문제가 있는 것 입니다.
+**spread 구문을 제한적으로 활용하세요.** 모든 다른 컴포넌트에서 활용한다면 문제가 있습니다.
 이는 여러분의 컴포넌트를 분리하고, JSX로 children을 넘겨줘야한다는 의미일 수 있습니다.
 
 ## JSX를 children으로 넘겨주기
 
-브라우저 내장 태그들을 감싸는 것은 흔한일 입니다
+브라우저 내장 태그들을 감싸는 것은 흔한 일 입니다
 ```html
 <div>
   <img />
 </div>
 ```
 
-가끔 여러분은 컴포넌트를 같은방식으로 감싸고 싶을 수 있습니다
+가끔 여러분은 컴포넌트를 같은 방식으로 감싸고 싶을 수 있습니다
 ```js
 <Card>
   <Avatar />
 </Card>
 ```
-JSX 태그 내부에 여러분의 컨텐츠를 감싸면, 부모 컴포넌트는 그 컨텐츠를 `children`이라 불리는
+JSX 태그 내부에 컨텐츠를 감싸면, 부모 컴포넌트는 그 컨텐츠를 `children`이라 불리는
 prop으로 받게 됩니다. 예를들어 아래 `Card`는 `<Avatar />`를 `children` prop으로 받고, div로 감싸져 렌더링 될 것입니다.
 
-[CodeSandbox](https://codesandbox.io/s/tx9gtr?file=/App.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/tx9gtr?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 ```js
 //App.js
 import Avatar from './Avatar.js';
@@ -290,15 +290,15 @@ export function getImageUrl(person, size = 's') {
 `Card`컴포넌트가 아무 컨텐츠나 감쌀 수 있는지 확인하기 위해,  `<Card>` 내부의 `<Avatar>`를 아무 문자로 바꿔보세요.
 내부에서 무엇이 렌더링되는지 알 필요가 없습니다. 여러분은 많은 곳에서 이 유연한 패턴을 보게 될 것입니다.
 
-여러분은 임의의 JSX와 부모 컴포는트로 "채워지는" "빈 곳"인 `children`을 가지는 컴포넌트를 생각해볼 수 있습니다.
-`children` prop을 패널, 그리드 등과 같은 시각적 포장에 활용할 수 있고, [레이아웃 컴포넌트 추출하기](https://beta.reactjs.org/learn/extracting-layout-components)에서 더 자세히 탐구할 수 있습니다.
+여러분은 임의의 JSX로 부모 컴포넌트가 "채울 수 있는" "빈 구멍"으로서 `children` prop을 가지는 컴포넌트를 생각해볼 수 있습니다.
+`children` prop을 패널, 그리드 등과 같은 시각적 포장에 활용할 수 있습니다. [레이아웃 컴포넌트 추출하기](https://beta.reactjs.org/learn/extracting-layout-components)에서 더 자세히 탐구할 수 있습니다.
 
 ## props가 시간 흐름에 따라 변하는 방식
 아래 `Clock`컴포넌트는 부모 컴포넌트로부터 `color`와 `time` 두 props를 받습니다.(부모 컴포넌트의 코드는 아직 배우지 않은 [상태](https://beta.reactjs.org/learn/state-a-components-memory)를 활용하기 때문에 생략되었습니다.)
 
 아래 코드에서 color를 변경해 보세요
 
-[CodeSandbox](https://codesandbox.io/s/dk5wm7?file=/Clock.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/dk5wm7?file=/Clock.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 ```js
 //Clock.js
 export default function Clock({ color, time }) {
@@ -337,7 +337,7 @@ Props는 시작하는 순간뿐 아니라, 매 순간 컴포넌트의 데이터�
   이 `Gallery`컴포넌트는 거의 유사한 두 프로필을 담고있습니다.
   `Profile` 컴포넌트를 추출하고 반복을 줄여보세요. 여러분은 어떤 props를 넘길지 결정해야 합니다.
 
-  [CodeSandbox](https://codesandbox.io/s/dh3v4z?file=%2FApp.js&from-sandpack=true)
+  [CodeSandbox](https://codesandbox.io/s/dh3v4z?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 
   ```js
   //App.js
@@ -418,7 +418,7 @@ export default function Gallery() {
   하지만 새로운 탭에서 이미지를 열어보면 이미지가 더 큰 것을 알 수 있습니다(`160`픽셀). 이미지의 진짜 크기는 여러분이 요청하는 썸네일 크기로 결정됩니다.
   `Avatar` 컴포넌트에서, `size` prop에 기반하여 가장 가까운 이미지 크기를 요청하도록 변경해보세요. `size`가 `90`보다 작으면 `getImageURL` 함수에 `b`(big)보다 `s`(small)을 요청하는 것처럼 하시면 됩니다. `size` prop을 변경하고 새 탭에서 이미지를 열어보면서 여러분의 변경 사항이 잘 동작하는지 확인해보세요.
 
-  [CodeSandbox](https://codesandbox.io/s/spzgh1?file=/App.js&from-sandpack=true)
+  [CodeSandbox](https://codesandbox.io/s/spzgh1?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
   ```js
   //App.js
   import { getImageUrl } from './utils.js';
@@ -463,7 +463,7 @@ export function getImageUrl(person, size) {
 
 아래 마크업에서 `Card` 컴포넌트를 추출하고, `children` prop이 다른 JSX를 넘기도록 활용해보세요
 
-[CodeSandbox](https://codesandbox.io/s/xtn0d0?file=/App.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/xtn0d0?file=/App.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.
 ```js
 //App.js
 export default function Profile() {
