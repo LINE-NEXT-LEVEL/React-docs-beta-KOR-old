@@ -29,7 +29,7 @@ export default function Avatar() {
 
 <img width="593" alt="스크린샷 2022-08-31 오전 1 09 42" src="https://user-images.githubusercontent.com/53335940/187486972-e36f790b-523d-4695-949b-4fe34b0997f2.png">
 
-여기서 `"https://i.imgur.com/7vQD0fPs.jpg"`와 `"Gregorio Y. Zara"`가 string으로서 전달되었습니다.
+여기서 `"https://i.imgur.com/7vQD0fPs.jpg"`와 `"Gregorio Y. Zara"`는 string으로 전달되었습니다.
 만약 여러분이 `src`나 `alt` 텍스트를 동적으로 지정해주고 싶다면 어떻게 해야 할까요? **`{`와 `}`로 감싸진 JavaScript 변수를 사용하면 됩니다.**
 
 [CodeSandbox](https://codesandbox.io/s/j25087?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
@@ -70,7 +70,7 @@ export default function TodoList() {
 
 <img width="578" alt="스크린샷 2022-08-31 오전 1 19 52" src="https://user-images.githubusercontent.com/53335940/187488887-d40bc4c5-3828-466d-ba02-e71294d2f476.png">
 
-`name` 변수를 'Gregorio Y. Zara'에서 'Hedy Lamarr'로 바꿔보세요. 바뀐 점을 눈치 채셨나요?
+`name` 변수를 `Gregorio Y. Zara`에서 `Hedy Lamarr`로 바꿔보세요. 바뀐 점을 눈치 채셨나요?
 `formatDate()`와 같은 함수를 포함한 어떤 JavaScript 표현식도 중괄호 내부에서는 동작합니다.
 
 [CodeSandbox](https://codesandbox.io/s/iuf3k6?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
@@ -142,7 +142,7 @@ export default function TodoList() {
 
 > **주의 사항**
 >
-> 인라인 `style` 속성은 카멜케이스(camelCase)로 작성됩니다. 예를 들어 HTML 코드인 `<ul style="background-color: black">`는 컴포넌트에서 `<ul style={{ backgroundColor: 'black' }}>` 이렇게 작성되어야 합니다.
+> 인라인 `style` 속성은 카멜케이스(camelCase)로 작성됩니다. 예를 들어 HTML 코드인 `<ul style="background-color: black">`는 컴포넌트에서 `<ul style={{ backgroundColor: 'black' }}>` 와 같이 작성되어야 합니다.
 
 ## JavaScript 객체와 중괄호에 대한 더 재밌는 사실들
 
