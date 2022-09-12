@@ -105,6 +105,8 @@ export default function TodoList() {
 
 string, number, 그리고 다른 JavaScript 표현식들 뿐만 아니라, 객체를 JSX에 전달하는 것도 가능합니다. 객체들은 `{ name: "Hedy Lamarr", inventions: 5 }`와 같이 원래부터 중괄호를 이용해 표현됩니다. 그래서 JS 객체를 JSX에 전달하기 위해서는 또 다른 중괄호 쌍으로 객체를 감싸주어야 합니다. `person={{ name: "Hedy Lamarr", inventions: 5 }}` 이렇게요.
 
+JSX 안에 CSS 스타일을 추가하는 경우에 이런 식으로 표기하곤 합니다. React가 이런 스타일을 요구하는건 아닙니다(CSS 클래스는 대부분의 경우에 훌륭한 방법입니다). 그래도 이렇게 inline 스타일을 추가하는 것이 필요한 경우 `style` 속성에 객체를 넘겨주면 됩니다.
+
 [CodeSandbox](https://codesandbox.io/s/u02y7v?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
