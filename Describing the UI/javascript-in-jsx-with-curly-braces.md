@@ -13,7 +13,7 @@ JSX는 JavaScript 파일에서 HTML과 유사한 마크업을 작성할 수 있�
 
 만약 string 타입의 속성을 JSX에 전달하려 한다면, 따옴표 혹은 쌍따옴표를 통해 감싸면 됩니다.
 
-[CodeSandbox](https://codesandbox.io/s/lkd0no?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/lkd0no?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 export default function Avatar() {
@@ -32,7 +32,7 @@ export default function Avatar() {
 여기서 `"https://i.imgur.com/7vQD0fPs.jpg"`와 `"Gregorio Y. Zara"`가 string으로서 전달되었습니다.
 만약 여러분이 `src`나 `alt` 텍스트를 동적으로 지정해주고 싶다면 어떻게 해야 할까요? **`{`와 `}`로 감싸진 JavaScript 변수를 사용하면 됩니다.**
 
-[CodeSandbox](https://codesandbox.io/s/j25087?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/j25087?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 export default function Avatar() {
@@ -56,7 +56,7 @@ export default function Avatar() {
 
 JSX는 JavaScript를 작성하는 한 가지 특별한 방법입니다. 중괄호(`{ }`)와 함께라면 JavaScript 코드를 내부에 적는게 가능하다는 말입니다. 아래의 예제를 봅시다. 우선 과학자의 이름을 `name`이란 변수에 선언합니다. 그리고 중괄호를 `<h1>`안에 `name` 변수를 심고 있습니다.
 
-[CodeSandbox](https://codesandbox.io/s/kmv2h8?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/kmv2h8?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 export default function TodoList() {
@@ -73,7 +73,7 @@ export default function TodoList() {
 `name` 변수를 'Gregorio Y. Zara'에서 'Hedy Lamarr'로 바꿔보세요. 바뀐 점을 눈치 채셨나요?
 `formatDate()`와 같은 함수를 포함한 어떤 JavaScript 표현식도 중괄호 내부에서는 동작합니다.
 
-[CodeSandbox](https://codesandbox.io/s/iuf3k6?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/iuf3k6?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const today = new Date();
@@ -105,7 +105,7 @@ export default function TodoList() {
 
 string, number, 그리고 다른 JavaScript 표현식들 뿐만 아니라, 객체를 JSX에 전달하는 것도 가능합니다. 객체들은 `{ name: "Hedy Lamarr", inventions: 5 }`와 같이 원래부터 중괄호를 이용해 표현됩니다. 그래서 JS 객체를 JSX에 전달하기 위해서는 또 다른 중괄호 쌍으로 객체를 감싸주어야 합니다. `person={{ name: "Hedy Lamarr", inventions: 5 }}` 이렇게요.
 
-[CodeSandbox](https://codesandbox.io/s/u02y7v?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/u02y7v?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 export default function TodoList() {
@@ -146,7 +146,7 @@ export default function TodoList() {
 
 한 객체 안에 여러개의 표현식들을 담고, JSX의 중괄호에서 한꺼번에 참조할 수도 있습니다.
 
-[CodeSandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)
+[CodeSandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const person = {
@@ -212,7 +212,7 @@ const person = {
 
 아래 코드는 `Objects are not valid as a React child`라는 에러 문구와 함께 동작하지 않습니다.
 
-[Code Sandbox](https://codesandbox.io/s/l1vt8l?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/l1vt8l?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const person = {
@@ -252,7 +252,7 @@ string이 아닌 _객체 자체를_ 마크업에 넘겨주었기 때문에 예�
 
 이 문제를 해결하려면 `<h1>{person}'s Todos</h1>`를 `h1>{person.name}'s Todos</h1>`로 수정해야 합니다.
 
-[Code Sandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const person = {
@@ -288,7 +288,7 @@ export default function TodoList() {
 
 `person` 객체에서 이미지 URL을 추출해보세요.
 
-[Code Sandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/osbftg?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const person = {
@@ -323,7 +323,7 @@ export default function TodoList() {
 **정답**
 이미지 URL을 `person.imageUrl` 프로퍼티로 바꾸고 `<img>` 태그에서 중괄호를 이용해 읽도록 합니다.
 
-[Code Sandbox](https://codesandbox.io/s/xwp20z?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/xwp20z?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const person = {
@@ -362,7 +362,7 @@ export default function TodoList() {
 이 조각들을 조합해 하나의 이미지 URL을 만들고 싶습니다. 그런데 `<img>` 태그에서 `src`를 잘못 지정한것 같아 보입니다.
 고칠 수 있나요?
 
-[Code Sandbox](https://codesandbox.io/s/5l3sdj?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/5l3sdj?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const baseUrl = 'https://i.imgur.com/';
@@ -406,7 +406,7 @@ export default function TodoList() {
 3. 알맞은 URL string 조합하기 (`baseUrl + person.imageId + person.imageSize + '.jpg'`)
 4. `}`를 통해 중괄호를 닫아 JavaScript 표현식 끝맺기.
 
-[Code Sandbox](https://codesandbox.io/s/1zerz2?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/1zerz2?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 const baseUrl = 'https://i.imgur.com/';
@@ -444,7 +444,7 @@ export default function TodoList() {
 
 이 식을 아래의 `getImageUrl`처럼 별도의 함수로 분리할 수도 있습니다.
 
-[Code Sandbox](https://codesandbox.io/s/l8qtdp?file=%2FApp.js&from-sandpack=true)
+[Code Sandbox](https://codesandbox.io/s/l8qtdp?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.
 
 ```jsx
 // App.js
