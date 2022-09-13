@@ -1,6 +1,6 @@
 # 조건부 렌더링
 
-보통 컴포넌트는 다양한 조건에 따라서 다른 것들을 보여줄 필요가 있습니다. 리엑트에서 `if` 구문, `&&`, 그리고 `? :` 연산자와 같은 자바스크립트 문법을 사용해 JSX를 조건에 맞추어 렌더링할 수 있습니다.
+컴포넌트는 다양한 조건에 따라서 다른 것들을 보여줄 필요가 있습니다. 리엑트에서 `if` 구문, `&&`, 그리고 `? :` 연산자와 같은 자바스크립트 문법을 사용해 JSX를 조건에 맞추어 렌더링할 수 있습니다.
 
 > **여러분이 배울 것들**
 >
@@ -45,9 +45,9 @@ export default function PackingList() {
 
 ![image](https://user-images.githubusercontent.com/55529617/188759381-a0908c4b-f452-4828-99ce-8803e8103fb3.png)
 
-`Item` 컴포넌트들 중 몇 개는 `isPacked` prop을 `false` 대신에 `true`로 설정했습니다. `isPacked={true}`일 경우에 물건들을 싸는 것이므로 체크표시(✔)를 추가해야 합니다.
+`Item` 컴포넌트들 중 몇 개는 `isPacked` prop을 `false` 대신에 `true`로 설정했습니다. `isPacked={true}`일 경우에 포장된 물ㄴ에 체크표시(✔)를 추가해야 합니다.
 
-아래와 같이 [`if`/`else` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 로 작성할 수 있습니다:
+아래와 같이 [`if`/`else` 구문](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) 로 작성할 수 있습니다:
 
 ```JavaScript
 if (isPacked) {
@@ -96,11 +96,11 @@ export default function PackingList() {
 
 다른 경우에 무엇이 반환되는지 [CodeSandbox]를 수정해보고 결과가 어떻게 변화하는지 보세요!
 
-자바스크립트의 `if`와 `return` 구문을 이용해 가지치기 로직을 생성하는 방법을 기억하세요. 리엑트에서 (조건과 같은) 흐름 제어는 JavaScript에 의해 조종됩니다.
+자바스크립트의 `if`와 `return` 구문을 이용해 가지치기 로직을 생성하는 방법을 기억하세요. 리엑트는 JavaScript로 (조건과 같은) 흐름 제어를 합니다.
 
 ## 조건에 맞추어 `null`을 이용해 아무것도 반환하지 않기
 
-어떤 상황들에서는 어떤 것도 렌더링하고 싶지 않을 떄가 있습니다. 예를 들어, 여러분이 짐을 싸야 하는 아이템들을 전혀 보여주고 싶지 않을 수 있습니다. 컴포넌트는 무조건 어떤 것을 반환해야 합니다. 이런 경우, `null`을 반환할 수 있습니다:
+어떤 상황들에서는 어떤 것도 렌더링하고 싶지 않을 떄가 있습니다. 예를 들어, 포장된 아이템들을 전혀 보여주고 싶지 않을 수 있습니다. 컴포넌트는 무조건 어떤 것을 반환해야 합니다. 이런 경우, `null`을 반환할 수 있습니다:
 
 ```JavaScript
 if (isPacked) {
@@ -147,7 +147,7 @@ export default function PackingList() {
 
 ![image](https://user-images.githubusercontent.com/55529617/188759410-9fd38613-fb4b-42b1-8362-e63ea675ec40.png)
 
-실전에서 컴포넌트에서 `null`을 반환하는 것은 흔한 일이 아닌데 왜냐하면 렌더링을 시도하는 개발자가 놀랄 수 있기 때문입니다. 일반적으로 여러분은 부모 컴포넌트의 JSX에서 그 컴포넌트를 조건에 맞추어 포함하거나 제외합니다. 아래 글에서 어떻게 하는지 적혀있습니다!
+렌더링을 시도하는 개발자가 놀랄 수 있기 때문에 실전에서 컴포넌트에서 `null`을 반환하는 것은 흔한 일이 아닙니다. 일반적으로 여러분은 부모 컴포넌트의 JSX에서 그 컴포넌트를 조건에 맞추어 포함하거나 제외합니다. 아래 글에서 어떻게 하는지 적혀있습니다!
 
 ## JSX를 조건에 맞게 포함하기
 
@@ -522,10 +522,10 @@ export default function PackingList() {
 >
 > **도전 2: `&&`를 이용해 아이템 중요도 보여주기**
 >
-> 이 예시에서, 각각의 `Item`은 숫자형의 `importance` prop을 받습니다. 0이 아닌 중요도를 가진 아이템에만 이탤릭체로 "(중요도:X)"로 렌더링하기 위해서 `&&` 연산자를 사용하세요. 아이템 목록은 아래와 같이 끝나야 합니다:
-> - Space suit (Importance: 9)
-> - Helmet with a golden leaf
-> - Photo of Tam (Importance: 6)
+> 이 예시에서, 각각의 `Item`은 숫자형의 `importance` prop을 받습니다. 0이 아닌 중요도를 가진 아이템에만 이탤릭체로 _"(중요도:X)"_ 로 렌더링하기 위해서 `&&` 연산자를 사용하세요. 아이템 목록은 아래와 같이 끝나야 합니다:
+> - _Space suit (Importance: 9)_
+> - _Helmet with a golden leaf_
+> - _Photo of Tam (Importance: 6)_
 > 두 라벨 사이에 공간을 추가하는 것을 잊지 마세요!
 
 ([CodeSandbox](https://codesandbox.io/s/wvs5jk?file=%2FApp.js&from-sandpack=true)에서 직접 코드를 작성할 수 있습니다.)
@@ -566,7 +566,7 @@ export default function PackingList() {
 
 > **정답**
 >
-> 아래와 같이 하면 효과가 있습니다:
+> 아래와 같이 하면 될 것입니다:
 
 ([CodeSandbox](https://codesandbox.io/s/fnswhh?file=%2FApp.js&from-sandpack=true)에서 정답을 확인할 수 있습니다.)
 
@@ -697,7 +697,7 @@ export default function DrinkList() {
 
 ![image](https://user-images.githubusercontent.com/55529617/188759885-e1a7d36f-defc-4fcd-84a8-debbbb9713d9.png)
 
-> 각각의 음료에 대한 정보는 다양한 조건들에 걸쳐 뿌려져 있는 것 대신에 함께 묶여 있습니다. 이것은 향후 더 많은 음료들을 추가하는 것을 쉽게 만듭니다.
+> 여기서는 각각의 음료에 대한 정보가 다양한 조건들에 걸쳐 뿌려져 있는 것 대신에 함께 묶여 있습니다. 이것은 향후 더 많은 음료들을 추가하는 것을 쉽게 만듭니다.
 >
 > 또다른 해결방안은 정보를 객체에 옮김으로서 조건들을 모두 없애는 것입니다:
 
