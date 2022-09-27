@@ -1,12 +1,12 @@
 # 조건부 렌더링
 
-컴포넌트는 다양한 조건에 따라서 다른 것들을 보여줄 필요가 있습니다. 리엑트에서 `if` 구문, `&&`, 그리고 `? :` 연산자와 같은 자바스크립트 문법을 사용해 JSX를 조건에 맞추어 렌더링할 수 있습니다.
+컴포넌트는 다양한 조건에 따라서 다른 것들을 보여줄 필요가 있습니다. 리액트에서 `if` 구문, `&&`, 그리고 `? :` 연산자와 같은 자바스크립트 문법을 사용해 JSX를 조건에 맞추어 렌더링할 수 있습니다.
 
 > **여러분이 배울 것들**
 >
 > - 조건에 따라 다른 JSX를 반환하는 방법
 > - 조건에 따라 JSX 조각을 포함하거나 제외하는 방법
-> - 리엑트 코드에서 흔히 사용하는 조건 문법의 줄임
+> - 리액트 코드에서 흔히 사용하는 조건 문법의 줄임
 
 ## JSX를 조건에 맞게 반환하기
 
@@ -96,7 +96,7 @@ export default function PackingList() {
 
 다른 경우에 무엇이 반환되는지 [CodeSandbox]를 수정해보고 결과가 어떻게 변화하는지 보세요!
 
-자바스크립트의 `if`와 `return` 구문을 이용해 가지치기 로직을 생성하는 방법을 기억하세요. 리엑트는 JavaScript로 (조건과 같은) 흐름 제어를 합니다.
+자바스크립트의 `if`와 `return` 구문을 이용해 가지치기 로직을 생성하는 방법을 기억하세요. 리액트는 JavaScript로 (조건과 같은) 흐름 제어를 합니다.
 
 ## 조건에 맞추어 `null`을 이용해 아무것도 반환하지 않기
 
@@ -252,7 +252,7 @@ export default function PackingList() {
 
 ## 논리적인 AND 연산자(`&&`)
 
-흔하게 마주칠 수 있는 또다른 축약표현은 [논리적인 AND 연산자(`&&`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)입니다. 조건이 true인 경우에만 렌더링하거나 즉 **조건에 맞지 않은 경우 어떤 것도 렌더링하지 않을** 때 리엑트 컴포넌트들에 종종 사용됩니다. `&&`로 여러분은 `isPacked`가 `true`일 때만 체크표시를 렌더링할 수 있습니다.  
+흔하게 마주칠 수 있는 또다른 축약표현은 [논리적인 AND 연산자(`&&`)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND)입니다. 조건이 true인 경우에만 렌더링하거나 즉 **조건에 맞지 않은 경우 어떤 것도 렌더링하지 않을** 때 리액트 컴포넌트들에 종종 사용됩니다. `&&`로 여러분은 `isPacked`가 `true`일 때만 체크표시를 렌더링할 수 있습니다.  
 
 ```js
 return (
@@ -306,7 +306,7 @@ export default function PackingList() {
 >
 > `&&`의 왼쪽에 숫자를 넣지 마세요.
 >
-> 조건을 검사하기 위해 JavaScript는 자동적으로 왼쪽 부분을 boolean으로 바꿉니다. 하지만, 만약 왼쪽 부분에 0이 있다면, 모든 표현이 그 값(0)이 되어 리엑트는 아무것도 렌더링하지 않는 것이 아니라 `0`을 렌더링할 것입니다.
+> 조건을 검사하기 위해 JavaScript는 자동적으로 왼쪽 부분을 boolean으로 바꿉니다. 하지만, 만약 왼쪽 부분에 0이 있다면, 모든 표현이 그 값(0)이 되어 리액트는 아무것도 렌더링하지 않는 것이 아니라 `0`을 렌더링할 것입니다.
 > 예를 들어, `messageCount && <p>New messages</p>`와 같은 코드를 작성하는 것은 흔한 실수입니다. `messageCount`가 `0`일 때 아무것도 렌더링하지 않을 거라 생각하는 것이 쉽지만 실제로는 `0`을 렌더링합니다!
 >
 > 이것을 고치기 위해서 boolean을 왼쪽 부분에 두세요: `messageCount > 0 && <p>New messages</p>`
@@ -378,7 +378,7 @@ export default function PackingList() {
 
 ![image](https://user-images.githubusercontent.com/55529617/188759569-495cee16-16c3-4a64-85b3-7eecd97fd7e0.png)
 
-이전처럼, 이 코드는 글자뿐만 아니라 추상화된 JSX에서도 동작합니다.
+이전처럼, 이 코드는 글자뿐만 아니라 임의의 JSX에서도 동작합니다.
 
 ([CodeSandbox](https://codesandbox.io/s/s3p7lh?file=%2FApp.js&from-sandpack=true)에서 확인 할 수 있습니다.)
 
@@ -424,11 +424,11 @@ export default function PackingList() {
 
 ![image](https://user-images.githubusercontent.com/55529617/188759583-0d63a737-367c-4810-aed1-870fc4ad345b.png)
 
-JavaScript에 익숙하지 않다면, 다양한 스타일은 처음에 버겁게 느껴질지도 모릅니다. 하지만, 이 스타일들을 배우는 것은 리엑트 컴포넌트뿐만 아니라 어떤 JavaScript 코드라도 읽고 쓰는 데 도움이 됩니다! 처음 시작하기에 더 좋은 스타일을 고르고나서 다른 것이 어떻게 동작하는지 잊었을 때 이 글을 다시 읽어보세요.
+JavaScript에 익숙하지 않다면, 다양한 스타일은 처음에 버겁게 느껴질지도 모릅니다. 하지만, 이 스타일들을 배우는 것은 리액트 컴포넌트뿐만 아니라 어떤 JavaScript 코드라도 읽고 쓰는 데 도움이 됩니다! 처음 시작하기에 더 좋은 스타일을 고르고나서 다른 것이 어떻게 동작하는지 잊었을 때 이 글을 다시 읽어보세요.
 
 ## 요약
 
-- 리엑트에서는 JavaScript로 분기처리를 제어합니다.
+- 리액트에서는 JavaScript로 분기처리를 제어합니다.
 - `if` 구문을 통해 JSX 표현을 조건적으로 반환할 수 있습니다.
 - 조건에 맞게 JSX를 변수에 저장하고 나서 중괄호를 이용해 다른 JSX 속에 해당 변수를 넣을 수 있습니다.
 - JSX에서 `{cond ? <A /> : <B />}`는 "`cond`하면 `<A />`를 렌더링하고, 그렇지 않으면 `<B />`를 렌더링한다"를 의미합니다.
