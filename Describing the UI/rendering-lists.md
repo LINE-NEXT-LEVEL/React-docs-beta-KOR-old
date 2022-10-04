@@ -3,9 +3,9 @@
 종종 수집된 데이터를 바탕으로 다양한 비슷한 컴포넌트들을 보여주고 싶을 때가 있습니다. 배열 형태의 데이터를 조작하고 싶으면 [JavaScript array methods](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array#)를 사용하면 됩니다. 이 페이지에서는 배열 형태의 데이터를 컴포넌트 배열로 필터링하고 변형시키기 위해 `filter()`과`map()`를 사용해 볼 것입니다.
 
  > **여러분이 배울 것들**
- >- JavaScript의 `map()`을 사용하여 배열을 컴포넌트로 렌더링하기
- >- JavaScript의 `filter()`을 사용하여 특정한 컴포넌트만 렌더링하기
- >- React key를 언제 사용하고 왜 사용해야 하는지
+ > - JavaScript의 `map()`을 사용하여 배열을 컴포넌트로 렌더링하는 방법
+ > - JavaScript의 `filter()`을 사용하여 특정한 컴포넌트만 렌더링하는 방법
+ > - React key를 언제 사용하고 왜 사용해야 하는지
 
 ## 배열로 데이터 렌더링하기
 
